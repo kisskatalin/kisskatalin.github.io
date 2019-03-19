@@ -1,0 +1,11 @@
+nav {
+    font-family: 'Heebo', sans-serif;
+    letter-spacing: -1px;
+    font-size: 25px;
+}
+
+header {
+    background-image: linear-gradient(90deg, #FF934F, #DA6563);
+    background-color: #FF934F;
+    color: #E8E8E8;
+}
