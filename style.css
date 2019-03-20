@@ -1,11 +1,44 @@
-nav {
-    font-family: 'Heebo', sans-serif;
-    letter-spacing: -1px;
-    font-size: 25px;
+body {
+    overflow-x: hidden;
 }
 
 header {
     background-image: linear-gradient(90deg, #FF934F, #DA6563);
     background-color: #FF934F;
     color: #E8E8E8;
+}
+nav {
+    margin: 0;
+    padding: 14px;
+}
+
+nav span {
+    font-family: 'Heebo', sans-serif;
+    letter-spacing: -1px;
+    font-size: 25px;
+}
+
+nav #hdr:after{
+     content:'_';
+     position: absolute;
+     display: inline;
+     -webkit-animation: line 1.4s infinite;
+     animation: line 1.4s infinite;
+}
+
+@-webkit-keyframes line {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+@keyframes line {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
 }
