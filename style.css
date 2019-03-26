@@ -1,5 +1,22 @@
 body {
     overflow-x: hidden;
+    font-family: 'Heebo', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c9c9c9;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #acacac;
 }
 
 header {
@@ -7,6 +24,7 @@ header {
     background-color: #FF934F;
     color: #E8E8E8;
 }
+
 nav {
     margin: 0;
     padding: 14px;
@@ -34,6 +52,7 @@ nav #hdr:after{
         opacity: 1;
     }
 }
+
 @keyframes line {
     0%, 100% {
         opacity: 0;
@@ -41,4 +60,9 @@ nav #hdr:after{
     50% {
         opacity: 1;
     }
+}
+
+h1{
+    color: #FF934F;
+    font-size: 30px;
 }
