@@ -19,7 +19,7 @@ fetch("https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=prezl
                     image.src = imageUrl;
 
                     if(imageUrl === ""){
-                        image.setAttribute("src", "https://abitofpopmusic.files.wordpress.com/2018/09/olly-murs-moves.jpg");
+                        image.setAttribute("src", "img/default.jpg");
                     }
 
                     if (response.recenttracks.track.length > 1) {

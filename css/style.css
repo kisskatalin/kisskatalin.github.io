@@ -26,23 +26,20 @@ header {
 }
 
 nav {
-    margin: 0;
-    padding: 14px;
+    overflow: hidden;
+    position: absolute;
 }
 
-nav span {
-    font-family: 'Heebo', sans-serif;
-    letter-spacing: -1px;
-    font-size: 25px;
+nav a {
+    color: #E8E8E8;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 2px;
 }
 
-nav #hdr:after{
-     content:'_';
-     position: absolute;
-     display: inline;
-     -webkit-animation: line 1.4s infinite;
-     animation: line 1.4s infinite;
+nav a:hover{
+    border-bottom: 3px solid #E8E8E8;
 }
+
 
 @-webkit-keyframes line {
     0%, 100% {
