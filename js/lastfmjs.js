@@ -65,8 +65,8 @@ fetch("https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=prezl
 
                     }
 
-                    const footer = document.getElementById('footer');
-                    const credit = document.getElementById('credit');
+                    const footer = document.getElementById('projects');
+                    const credit = document.getElementById('contact');
 
                     footer.insertBefore(myDiv, credit);
 

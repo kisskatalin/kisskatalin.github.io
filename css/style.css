@@ -40,6 +40,28 @@ nav a:hover{
     border-bottom: 3px solid #E8E8E8;
 }
 
+#header h1 {
+    font-family: 'Heebo', sans-serif;
+    font-size: 100px;
+    line-height: 0.9em;
+    color: #E8E8E8;
+}
+#header h2 {
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.7em;
+    margin-top: 18px;
+    letter-spacing: 4px;
+    line-height: 1.4em;
+    color: #E8E8E8;
+}
+
+#name:after{
+    content:'|';
+    position: absolute;
+    display: inline;
+    -webkit-animation: line 1.4s infinite;
+    animation: line 1.4s infinite;
+}
 
 @-webkit-keyframes line {
     0%, 100% {
@@ -59,7 +81,28 @@ nav a:hover{
     }
 }
 
-h1{
+#more{
+    padding: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+    background-color: #111;
+}
+#more:hover{
+    background-color: #e8e8e8;
+    color: #111;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.5s ease-in-out;
+}
+#more:hover::after{
+    height: 100%;
+}
+
+h1 {
     color: #FF934F;
     font-size: 30px;
 }
