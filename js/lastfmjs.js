@@ -24,7 +24,7 @@ fetch("https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=prezl
 
                     if (response.recenttracks.track.length > 1) {
                         const myDiv2 = document.createElement('div');
-                        myDiv2.classList.add('belso', 'wow', 'fadeIn');
+                        myDiv2.classList.add('belso');
 
                         const infoDiv = document.createElement('div');
                         infoDiv.classList.add('info');
@@ -45,7 +45,7 @@ fetch("https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=prezl
 
                     else {
                         const myDiv2 = document.createElement('div');
-                        myDiv2.classList.add('belso2', 'wow', 'fadeIn');
+                        myDiv2.classList.add('belso2');
 
                         const infoDiv = document.createElement('div');
                         infoDiv.classList.add('info2');
@@ -65,7 +65,7 @@ fetch("https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=prezl
 
                     }
 
-                    const footer = document.getElementById('projects');
+                    const footer = document.getElementById('footer');
                     const credit = document.getElementById('contact');
 
                     footer.insertBefore(myDiv, credit);

@@ -22,7 +22,7 @@ body {
 header {
     background-image: linear-gradient(90deg, #FF934F, #DA6563);
     background-color: #FF934F;
-    color: #E8E8E8;
+    color: #f4f4f4;
 }
 
 nav {
@@ -31,13 +31,13 @@ nav {
 }
 
 nav a {
-    color: #E8E8E8;
+    color: #f4f4f4;
     border-bottom: 3px solid transparent;
     padding-bottom: 2px;
 }
 
 nav a:hover{
-    border-bottom: 3px solid #E8E8E8;
+    border-bottom: 3px solid #f4f4f4;
 }
 
 #header h1 {
@@ -52,7 +52,7 @@ nav a:hover{
     margin-top: 18px;
     letter-spacing: 4px;
     line-height: 1.4em;
-    color: #E8E8E8;
+    color: #f4f4f4;
 }
 
 #name:after{
@@ -91,7 +91,7 @@ nav a:hover{
     background-color: #111;
 }
 #more:hover{
-    background-color: #e8e8e8;
+    background-color: #f4f4f4;
     color: #111;
     bottom: 0;
     left: 0;
@@ -105,4 +105,20 @@ nav a:hover{
 h1 {
     color: #FF934F;
     font-size: 30px;
+}
+
+.listeningDiv {
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    padding: 4rem 5rem;
+}
+
+.listeningDiv:hover {
+    background-color: #e9e9e9;
+}
+
+hr.hrBetween{
+    border-top: 1px solid #d1d1d1;
+    margin-left: 200px;
+    margin-right: 200px;
 }
