@@ -46,6 +46,7 @@ nav a:hover{
     line-height: 0.9em;
     color: #E8E8E8;
 }
+
 #header h2 {
     font-family: 'Heebo', sans-serif;
     font-size: 1.7em;
@@ -90,6 +91,7 @@ nav a:hover{
     transition: 0.5s ease-out;
     background-color: #111;
 }
+
 #more:hover{
     background-color: #f4f4f4;
     color: #111;
@@ -105,6 +107,16 @@ nav a:hover{
 h1 {
     color: #FF934F;
     font-size: 30px;
+}
+
+.interested {
+    background-image: linear-gradient(90deg, #FFADA2, #FF934F);
+    margin-bottom: -1px;
+}
+
+.interested h1 {
+    font-weight: 300;
+    color: #fff;
 }
 
 .listeningDiv {
