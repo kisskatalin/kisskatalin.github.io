@@ -1,26 +1,30 @@
 .belso, .belso2 {
     display: flex;
 }
-.info, .info2{
+
+.info, .info2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 40px;
 }
-.info h1{
+
+.info h1 {
     display: flex;
     font-size: 18px;
     color: #ff934f;
     font-weight: 300;
     margin-bottom: 15px;
 }
-.info2 h1{
+
+.info2 h1 {
     display: flex;
     font-size: 18px;
     color: #919191;
     font-weight: 300;
     margin-bottom: 15px;
 }
+
 .belso .albumImage {
     display: flex;
     height: 120px;
@@ -31,6 +35,7 @@
     animation: spin 2.5s linear infinite;
     animation-play-state: paused;
 }
+
 .belso2 .albumImage {
     display: flex;
     height: 120px;
@@ -39,41 +44,49 @@
     border: 3px solid #fff;
     padding: 6px;
 }
+
 @-webkit-keyframes spin {
     to {
         transform: rotate(1turn);
     }
 }
+
 @keyframes spin {
     to {
         transform: rotate(1turn);
     }
 }
+
 .belso .albumImage:hover {
     animation-play-state: running;
 }
+
 .info .title {
     display: flex;
     font-weight: 300;
     font-size: 22px;
     padding-bottom: 10px;
 }
+
 .info .album {
     display: flex;
     font-size: 15px;
     font-style: italic;
 }
+
 .info2 .title {
     display: flex;
     font-weight: 300;
     font-size: 22px;
     padding-bottom: 10px;
 }
+
 .info2 .album {
     display: flex;
     font-size: 15px;
     font-style: italic;
 }
+
 .fejh2 {
     font-size: 30px;
     line-height: 42px;

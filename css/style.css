@@ -36,7 +36,7 @@ nav a {
     padding-bottom: 2px;
 }
 
-nav a:hover{
+nav a:hover {
     border-bottom: 3px solid #f4f4f4;
 }
 
@@ -56,7 +56,7 @@ nav a:hover{
     color: #f4f4f4;
 }
 
-#name:after{
+#name:after {
     content:'|';
     position: absolute;
     display: inline;
@@ -100,6 +100,7 @@ nav a:hover{
     z-index: -1;
     transition: 0.5s ease-in-out;
 }
+
 #more:hover::after{
     height: 100%;
 }
@@ -119,17 +120,18 @@ h1 {
     color: #fff;
 }
 
-.listeningDiv {
+.listening {
     margin: 0 auto;
     background-color: #f4f4f4;
     padding: 4rem 5rem;
 }
 
-.listeningDiv:hover {
+.listening:hover {
     background-color: #e9e9e9;
+    cursor: cell;
 }
 
-hr.hrBetween{
+hr.hrBetween {
     border-top: 1px solid #d1d1d1;
     margin-left: 200px;
     margin-right: 200px;

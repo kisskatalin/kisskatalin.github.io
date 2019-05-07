@@ -5,12 +5,11 @@ fetch("https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=prezl
                 .then(response => {
                     console.log(response);
 
-                    const myDiv = document.createElement('div');
-                    myDiv.classList.add('db-ns', 'dn', 'listeningDiv');
+                    const listening = document.createElement('div');
+                    listening.classList.add('db-ns', 'dn', 'listening');
 
                     const track = response.recenttracks.track[0];
                     const line = '\u2014';
-                    const quote = '\u0022';
                     const imageUrl = track.image[2]['#text'];
                     const artistTitle = track.artist['#text'] + " " + line + " " + track.name.toUpperCase();
 
@@ -24,7 +23,7 @@ fetch("https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=prezl
 
                     if (response.recenttracks.track.length > 1) {
                         const myDiv2 = document.createElement('div');
-                        myDiv2.classList.add('belso');
+                        myDiv2.classList.add('wow', 'fadeIn', 'belso');
 
                         const infoDiv = document.createElement('div');
                         infoDiv.classList.add('info');
@@ -40,12 +39,12 @@ fetch("https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=prezl
 
                         myDiv2.append(image, infoDiv);
 
-                        myDiv.appendChild(myDiv2);
+                        listening.appendChild(myDiv2);
                     }
 
                     else {
                         const myDiv2 = document.createElement('div');
-                        myDiv2.classList.add('belso2');
+                        myDiv2.classList.add('wow', 'fadeIn', 'belso2');
 
                         const infoDiv = document.createElement('div');
                         infoDiv.classList.add('info2');
@@ -61,14 +60,14 @@ fetch("https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=prezl
 
                         myDiv2.append(image, infoDiv);
 
-                        myDiv.appendChild(myDiv2);
+                        listening.appendChild(myDiv2);
 
                     }
 
                     const footer = document.getElementById('footer');
                     const credit = document.getElementById('contact');
 
-                    footer.insertBefore(myDiv, credit);
+                    footer.insertBefore(listening, credit);
 
                 });
         }
