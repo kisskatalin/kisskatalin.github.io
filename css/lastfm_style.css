@@ -1,15 +1,15 @@
-.belso, .belso2 {
+.currentlyListening, .notListening {
     display: flex;
 }
 
-.info, .info2 {
+.currentlyListening_info, .notListening_info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 40px;
 }
 
-.info h1 {
+.currentlyListening_info h1 {
     display: flex;
     font-size: 18px;
     color: #ff934f;
@@ -17,7 +17,7 @@
     margin-bottom: 15px;
 }
 
-.info2 h1 {
+.notListening_info h1 {
     display: flex;
     font-size: 18px;
     color: #919191;
@@ -25,7 +25,7 @@
     margin-bottom: 15px;
 }
 
-.belso .albumImage {
+.currentlyListening .albumImage {
     display: flex;
     height: 120px;
     width: 120px;
@@ -34,15 +34,6 @@
     padding: 6px;
     animation: spin 2.5s linear infinite;
     animation-play-state: paused;
-}
-
-.belso2 .albumImage {
-    display: flex;
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    border: 3px solid #fff;
-    padding: 6px;
 }
 
 @-webkit-keyframes spin {
@@ -57,37 +48,41 @@
     }
 }
 
-.belso .albumImage:hover {
+.notListening .albumImage {
+    display: flex;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    padding: 6px;
+}
+
+.currentlyListening .albumImage:hover {
     animation-play-state: running;
 }
 
-.info .title {
+.currentlyListening_info .title {
     display: flex;
     font-weight: 300;
     font-size: 22px;
     padding-bottom: 10px;
 }
 
-.info .album {
+.currentlyListening_info .album {
     display: flex;
     font-size: 15px;
     font-style: italic;
 }
 
-.info2 .title {
+.notListening_info .title {
     display: flex;
     font-weight: 300;
     font-size: 22px;
     padding-bottom: 10px;
 }
 
-.info2 .album {
+.notListening_info .album {
     display: flex;
     font-size: 15px;
     font-style: italic;
-}
-
-.fejh2 {
-    font-size: 30px;
-    line-height: 42px;
 }

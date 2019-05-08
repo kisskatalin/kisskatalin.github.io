@@ -11,7 +11,7 @@ fetch("https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=prezl
                     const track = response.recenttracks.track[0];
                     const line = '\u2014';
                     const imageUrl = track.image[2]['#text'];
-                    const artistTitle = track.artist['#text'] + " " + line + " " + track.name.toUpperCase();
+                    const artistAndTitle = track.artist['#text'] + " " + line + " " + track.name.toUpperCase();
 
                     const image = document.createElement('img');
                     image.classList.add('albumImage');
@@ -22,52 +22,52 @@ fetch("https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=prezl
                     }
 
                     if (response.recenttracks.track.length > 1) {
-                        const myDiv2 = document.createElement('div');
-                        myDiv2.classList.add('wow', 'fadeIn', 'belso');
+                        const currentlyListening = document.createElement('div');
+                        currentlyListening.classList.add('wow', 'fadeIn', 'currentlyListening');
+                        
+                        const currentlyListening_info = document.createElement('div');
+                        currentlyListening_info.classList.add('currentlyListening_info');
 
-                        const infoDiv = document.createElement('div');
-                        infoDiv.classList.add('info');
+                        const listeningText = document.createElement('h1');
+                        listeningText.textContent = "What I'm listening to now:";
 
-                        const listenTitle = document.createElement('h1');
-                        listenTitle.textContent = "What I'm listening to now:";
+                        const artistAndTitleText = document.createElement('div');
+                        artistAndTitleText.classList.add('title');
+                        artistAndTitleText.textContent = artistAndTitle;
 
-                        const titleText = document.createElement('div');
-                        titleText.classList.add('title');
-                        titleText.textContent = artistTitle;
+                        currentlyListening_info.append(listeningText, artistAndTitleText);
 
-                        infoDiv.append(listenTitle, titleText);
+                        currentlyListening.append(image, currentlyListening_info);
 
-                        myDiv2.append(image, infoDiv);
-
-                        listening.appendChild(myDiv2);
+                        listening.appendChild(currentlyListening);
                     }
 
                     else {
-                        const myDiv2 = document.createElement('div');
-                        myDiv2.classList.add('wow', 'fadeIn', 'belso2');
+                        const notListening = document.createElement('div');
+                        notListening.classList.add('wow', 'fadeIn', 'notListening');
 
-                        const infoDiv = document.createElement('div');
-                        infoDiv.classList.add('info2');
+                        const notListening_info = document.createElement('div');
+                        notListening_info.classList.add('notListening_info');
 
-                        const listenTitle = document.createElement('h1');
-                        listenTitle.textContent = "What I was listening to recently:";
+                        const notListeningText = document.createElement('h1');
+                        notListeningText.textContent = "What I was listening to recently:";
 
-                        const titleText = document.createElement('div');
-                        titleText.classList.add('title');
-                        titleText.textContent = artistTitle;
+                        const artistAndTitleText = document.createElement('div');
+                        artistAndTitleText.classList.add('title');
+                        artistAndTitleText.textContent = artistAndTitle;
 
-                        infoDiv.append(listenTitle, titleText);
+                        notListening_info.append(notListeningText, artistAndTitleText);
 
-                        myDiv2.append(image, infoDiv);
+                        notListening.append(image, notListening_info);
 
-                        listening.appendChild(myDiv2);
+                        listening.appendChild(notListening);
 
                     }
 
                     const footer = document.getElementById('footer');
-                    const credit = document.getElementById('contact');
+                    const contact = document.getElementById('contact');
 
-                    footer.insertBefore(listening, credit);
+                    footer.insertBefore(listening, contact);
 
                 });
         }
