@@ -124,7 +124,18 @@ h1 {
 .listening {
     margin: 0 auto;
     background-color: #f4f4f4;
-    padding: 4rem 5rem;
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+    .listening {
+        padding: 2rem 3rem;
+    }
+}
+
+@media screen and (min-width: 60em) {
+    .listening {
+        padding: 4rem 5rem;
+    }
 }
 
 .listening:hover {
