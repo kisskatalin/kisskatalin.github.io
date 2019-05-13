@@ -42,14 +42,14 @@ nav a:hover {
 
 #header h1 {
     font-family: 'Heebo', sans-serif;
-    font-size: 100px;
+    font-size: 70px;
     line-height: 0.9em;
     color: #E8E8E8;
 }
 
 #header h2 {
     font-family: 'Heebo', sans-serif;
-    font-size: 1.7em;
+    font-size: 22px;
     margin-top: 18px;
     letter-spacing: 4px;
     line-height: 1.4em;
@@ -127,12 +127,27 @@ h1 {
 }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
+    #header h1 {
+        font-size: 85px;
+    }
+
+    #header h2 {
+        font-size: 25px;
+    }
     .listening {
-        padding: 2rem 2rem;
+        padding: 2rem;
     }
 }
 
 @media screen and (min-width: 60em) {
+    #header h1{
+        font-size: 100px;
+    }
+
+    #header h2 {
+        font-size: 28px;
+    }
+
     .listening {
         padding: 4rem 5rem;
     }
