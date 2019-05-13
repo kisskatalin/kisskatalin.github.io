@@ -107,7 +107,7 @@ nav a:hover {
 
 h1 {
     color: #FF934F;
-    font-size: 30px;
+    font-size: 27px;
     margin: 0;
 }
 
@@ -117,6 +117,7 @@ h1 {
 }
 
 .interested h1 {
+    font-size: 25px;
     font-weight: 300;
     color: #fff;
 }
@@ -140,12 +141,20 @@ h1 {
 }
 
 @media screen and (min-width: 60em) {
-    #header h1{
+    h1 {
+        font-size: 30px;
+    }
+
+    #header h1 {
         font-size: 100px;
     }
 
     #header h2 {
         font-size: 28px;
+    }
+
+    .interested h1 {
+        font-size: 30px;
     }
 
     .listening {

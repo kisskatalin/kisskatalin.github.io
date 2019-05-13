@@ -64,25 +64,24 @@
 .currentlyListening_info .title {
     display: flex;
     font-weight: 300;
-    font-size: 22px;
+    font-size: 20px;
     padding-bottom: 10px;
-}
-
-.currentlyListening_info .album {
-    display: flex;
-    font-size: 15px;
-    font-style: italic;
 }
 
 .notListening_info .title {
     display: flex;
     font-weight: 300;
-    font-size: 22px;
+    font-size: 20px;
     padding-bottom: 10px;
 }
 
-.notListening_info .album {
-    display: flex;
-    font-size: 15px;
-    font-style: italic;
+
+@media screen and (min-width: 60em) {
+    .currentlyListening_info .title {
+        font-size: 22px;
+    }
+
+    .notListening_info .title {
+        font-size: 22px;
+    }
 }
