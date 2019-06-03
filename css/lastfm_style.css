@@ -32,8 +32,8 @@
     border-radius: 50%;
     border: 3px solid #fff;
     padding: 6px;
-    animation: spin 2.5s linear infinite;
-    animation-play-state: paused;
+    animation: spin 3s linear infinite;
+    animation-play-state: running;
 }
 
 @-webkit-keyframes spin {
@@ -58,7 +58,7 @@
 }
 
 .currentlyListening .albumImage:hover {
-    animation-play-state: running;
+    animation-play-state: paused;
 }
 
 .currentlyListening_info .title {

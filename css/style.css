@@ -111,6 +111,26 @@ h1 {
     margin: 0;
 }
 
+[id="about"] {
+    margin: 0 auto;
+}
+
+[id="about"] h2{
+    color: #FF934F;
+    font-size: 24px;
+    margin: 0;
+}
+
+[id="about"] h3{
+    color: #FF934F;
+    font-size: 20px;
+    margin: 0;
+}
+
+.about-f1 {
+    font-size: 20px;
+}
+
 .interested {
     background-image: linear-gradient(90deg, #FFADA2, #FF934F);
     margin-bottom: -1px;
@@ -127,6 +147,21 @@ h1 {
     background-color: #f4f4f4;
 }
 
+.listening:hover {
+    background-color: #e9e9e9;
+    cursor: cell;
+}
+
+hr.hrBetween {
+    border-top: 1px solid #d1d1d1;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+/*
+    MEDIUM
+*/
+
 @media screen and (min-width: 30em) and (max-width: 60em) {
     #header h1 {
         font-size: 85px;
@@ -136,12 +171,22 @@ h1 {
         font-size: 25px;
         line-height: 40px;
     }
+
     .listening {
         padding: 2rem;
     }
+
+    .about-f2 {
+        font-size: 16px;
+    }
 }
 
+/*
+    LARGE
+*/
+
 @media screen and (min-width: 60em) {
+
     h1 {
         font-size: 30px;
     }
@@ -162,15 +207,4 @@ h1 {
     .listening {
         padding: 4rem 5rem;
     }
-}
-
-.listening:hover {
-    background-color: #e9e9e9;
-    cursor: cell;
-}
-
-hr.hrBetween {
-    border-top: 1px solid #d1d1d1;
-    margin-left: 200px;
-    margin-right: 200px;
 }
