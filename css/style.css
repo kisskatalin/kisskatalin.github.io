@@ -1,6 +1,7 @@
 body {
     overflow-x: hidden;
     font-family: 'Heebo', sans-serif;
+    background-color: #000000;
 }
 
 ::-webkit-scrollbar {
@@ -156,6 +157,11 @@ hr.hrBetween {
     border-top: 1px solid #d1d1d1;
     margin-left: 200px;
     margin-right: 200px;
+}
+
+.credit {
+    font-size: 10px;
+    text-transform: uppercase;
 }
 
 /*
