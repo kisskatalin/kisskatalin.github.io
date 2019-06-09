@@ -10,7 +10,6 @@
 }
 
 .currentlyListening_info h1 {
-    display: flex;
     font-size: 18px;
     color: #ff934f;
     font-weight: 300;
@@ -18,7 +17,6 @@
 }
 
 .notListening_info h1 {
-    display: flex;
     font-size: 18px;
     color: #919191;
     font-weight: 300;
@@ -26,7 +24,6 @@
 }
 
 .currentlyListening .albumImage {
-    display: flex;
     height: 120px;
     width: 120px;
     border-radius: 50%;
@@ -49,7 +46,6 @@
 }
 
 .notListening .albumImage {
-    display: flex;
     height: 120px;
     width: 120px;
     border-radius: 50%;
@@ -62,14 +58,12 @@
 }
 
 .currentlyListening_info .title {
-    display: flex;
     font-weight: 300;
     font-size: 20px;
     padding-bottom: 10px;
 }
 
 .notListening_info .title {
-    display: flex;
     font-weight: 300;
     font-size: 20px;
     padding-bottom: 10px;
