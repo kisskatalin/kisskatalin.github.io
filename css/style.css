@@ -71,6 +71,7 @@ nav a:hover {
     0%, 100% {
         opacity: 0;
     }
+
     50% {
         opacity: 1;
     }
@@ -80,12 +81,13 @@ nav a:hover {
     0%, 100% {
         opacity: 0;
     }
+
     50% {
         opacity: 1;
     }
 }
 
-#more{
+#more {
     padding: 1rem;
     color: #fff;
     text-transform: uppercase;
