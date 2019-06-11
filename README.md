@@ -7,3 +7,4 @@ Live preview: https://prezli.github.io/portfolio
 - [Animate.css](https://daneden.github.io/animate.css/)
 - [wow.js](https://wowjs.uk/)
 - [Last.fm API](https://last.fm/api)
+- [Social Media Icons](https://github.com/konsav/social-icons)
