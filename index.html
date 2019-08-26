@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Katalin Kiss</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chivo:400,700"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700,800,900"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla:400,700"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.11.1/tachyons.css"/>
@@ -14,24 +13,6 @@
     <script type="text/javascript" src="js/lastfmjs.js"></script>
     <script type="text/javascript" src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
-
-    <script>
-        $(document).ready(function(){
-            $("a").click(function() {
-                if (this.hash !== "") {
-                    event.preventDefault();
-
-                    const hash = this.hash;
-
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 900, function(){
-                        window.location.hash = hash;
-                    });
-                }
-            });
-        });
-    </script>
 </head>
 
 <body class="w-100 bg-near-white">
@@ -67,7 +48,7 @@
             <div class="dtc-l tl pt4-l pt2 pr3">
                 <span class="fw5">Web Design</span>
                 <br><i class="fa fa-angle-right"></i> Adobe Photoshop, Adobe Illustrator, Adobe InDesign
-                <br><i class="fa fa-angle-right"></i> Adobe Xd, InVision
+                <br><i class="fa fa-angle-right"></i> Adobe Xd
             </div>
             <div class="dtc-l tl pt4-l pt2 pr3">
                 <span class="fw5">SEO & Others</span>
@@ -82,7 +63,7 @@
     <hr class="hrBetween">
     <div id="projects" class="pv6-l pv5">
         <h1 class="wow fadeInDown fw3 tc mv3">Projects</h1>
-            <div class="wow fadeIn mt3 f5 tc i">soon...</div>
+            <article></article>
     </div>
     <div class="interested pa5 tc">
         <h1 class="wow jackInTheBox tc mv3">Are you interested to work with me?</h1>
@@ -95,7 +76,7 @@
         <div class="bg-black-80 pa4" id="contact">
             <h1 class="f5 fw6 light-silver ttu tracked mb3">Contact</h1>
                 <div>
-                    <span class="mr2"><a href="#"><img src="img/facebook.png"></a></span><span class="mr2"><a href="#"><img src="img/twitter.png"></a></span><span class="mr2"><a href="#"><img src="img/linkedin.png"></a></span>
+                    <span class="mr3"><a href="#"><img src='img/facebook.png' onmouseover="this.src='img/facebookHover.png';" onmouseout="this.src='img/facebook.png';" /></a></span><span class="mr3"><a href="#"><img src="img/twitter.png" onmouseover="this.src='img/twitterHover.png';" onmouseout="this.src='img/twitter.png';" /></a></span><span class="mr2"><a href="#"><img src='img/linkedin.png' onmouseover="this.src='img/linkedinHover.png';" onmouseout="this.src='img/linkedin.png';" /></a></span>
                 </div>
             <div class="credit tr white-50">Design & Code by Katalin Kiss</div>
         </div>

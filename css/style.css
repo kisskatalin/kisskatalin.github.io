@@ -165,7 +165,8 @@ hr.hrBetween {
 
 
 .credit {
-    font-size: 10px;
+    font-family: 'Karla', sans-serif;
+    font-size: 11px;
     text-transform: uppercase;
 }
 
