@@ -4,30 +4,37 @@
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Katalin Kiss</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700,800,900"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla:400,700"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.11.1/tachyons.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4/css/tachyons.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/lastfm_style.css"/>
     <script type="text/javascript" src="js/lastfmjs.js"></script>
-    <script type="text/javascript" src="js/wow.min.js"></script>
-    <script type="text/javascript" src="js/jquery.js"></script>
 </head>
 
-<body class="w-100 vh-100">
-    <header class="w-100" id="header">
-        <div class="w-100 dt ph3 ph4-m ph6-l pv6" id="header1">
-            <div class="v-mid dtc tl ma0">
-                <h1 class="ma0 ttc tracked-tight fw5" id="name">Katalin<br> Kiss</h1>
-                <h2 class="fw3">Front-End Web Developer
-                <br>UX/UI Designer</h2>
-                <button id="more" class="fw5 f5 link" href="mailto:thekatezly@gmail.com">Contact Me</button>
+<body class="vh-100">
+    <i class="target" id="header"></i>
+    <i class="target" id="projects"></i>
+
+    <div id="pages">
+        <section class="w-100" id="headerinner">
+            <div class="w-100 headerinner">
+                <div class="v-mid dtc tl ma0">
+                    <h1 class="ma0 ttc tracked-tight fw5" id="name">Katalin<br> Kiss</h1>
+                    <h2 class="fw3">Front-End Web Developer
+                    <br>UX/UI Designer</h2>
+                    <button id="more" class="fw5 f5 link" href="mailto:thekatezly@gmail.com">Contact Me</button>
+                </div>
+                <a href="#projects">Projects</a>
             </div>
-        </div>
-    </header>
+        </section>
+        <section class="w-100" id="projectsinner">
+            <h1>ABOUT</h1>
+            <p>
+              <a href="#header" class="bg1">HOME</a>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus praesentium ipsum esse autem quisquam earum accusantium cumque, ipsa ratione saepe sunt voluptatibus fuga perspiciatis reiciendis qui impedit nam itaque incidunt.
+            </p>
+        </section>
+    </div>
 </body>
-<script>
-    new WOW().init();
-</script>
 </html>

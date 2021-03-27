@@ -1,12 +1,5 @@
 h2 {margin:0;}
 
-body {
-    color: #4e4e4e;
-    overflow-x: hidden;
-    font-family: 'Heebo', sans-serif;
-    background-color: #000000;
-}
-
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -24,42 +17,52 @@ body {
 }
 
 body {
-    background-image: -moz-linear-gradient(to right, #FF934F, #DA6563);
-    background-image: -webkit-linear-gradient(to right, #FF934F, #DA6563);
-    background-image: linear-gradient(90deg, #FF934F, #DA6563);
-    background-color: #FF934F;
-    color: #f4f4f4;
-}
-
-nav {
-    overflow: hidden;
-    position: absolute;
-}
-
-nav a {
-    color: #f4f4f4;
-    border-bottom: 3px solid transparent;
-    padding-bottom: 2px;
-}
-
-nav a:hover {
-    border-bottom: 3px solid #f4f4f4;
-}
-
-#header h1 {
     font-family: 'Heebo', sans-serif;
-    font-size: 70px;
-    line-height: 0.9em;
+    background-image: -moz-linear-gradient(to right, #FF934F, #FF6F61);
+    background-image: -webkit-linear-gradient(to right, #FF934F, #FF6F61);
+    background-image: linear-gradient(90deg, #FF934F, #FF6F61);
+    background-color: #FF934F;
+    color: #E8E8E8;
+    overflow-x: hidden;
+}
+
+#pages {
+    flex-grow: 1;
+    display: flex;
+    transition: 1s;
+    height: 100%;
+}
+
+#pages section {
+    overflow: auto;
+    min-width: 100%;
+    overflow-y: auto;
+}
+
+.headerinner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px 0 128px;
+    height: 100%;
+}
+
+.headerinner h1 {
+    font-family: 'Heebo', sans-serif;
+    font-size: 120px;
+    line-height: 110px;
+    letter-spacing: -8px;
     color: #E8E8E8;
 }
 
-#header h2 {
+.headerinner h2 {
     font-family: 'Heebo', sans-serif;
-    font-size: 25px;
-    margin-top: 18px;
-    letter-spacing: 3px;
+    font-size: 28px;
+    line-height: 28px;
+    margin:20px 0 32px 0;
+    letter-spacing: 2px;
     line-height: 35px;
-    color: #f4f4f4;
+    color: #E8E8E8;
 }
 
 #name:after {
@@ -92,7 +95,7 @@ nav a:hover {
 
 #more {
     padding: 1rem;
-    color: #fff;
+    color: #E8E8E8;
     text-transform: uppercase;
     border: none;
     cursor: pointer;
@@ -101,7 +104,7 @@ nav a:hover {
 }
 
 #more:hover{
-    background-color: #f4f4f4;
+    background-color: #E8E8E8;
     color: #111;
     bottom: 0;
     left: 0;
@@ -113,45 +116,19 @@ nav a:hover {
     height: 100%;
 }
 
-h1 {
-    color: #FF934F;
-    font-size: 25px;
-    margin: 0;
-}
-
-[id="about"] {
-    margin: 0 auto;
-}
-
-[id="about"] h2{
-    color: #FF934F;
-    font-size: 24px;
-    margin: 0;
-}
-
-[id="about"] h3{
-    color: #FF934F;
-    font-size: 20px;
-    margin: 0;
-}
-
-.about-f1 {
-    font-size: 20px;
-}
-
-.interested {
-    background-image: linear-gradient(90deg, #FFADA2, #FF934F);
-    margin-bottom: -1px;
-}
-
-.interested h1 {
-    font-size: 25px;
-    font-weight: 300;
-    color: #fff;
-}
-
 .listening {
-    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    padding: 32px 0;
+    width: 100%;
+}
+
+#header:target ~ #pages {
+    transform: translateX(-0%);
+}
+
+#projects:target ~ #pages {
+    transform: translateX(-100%);
 }
 
 /*
@@ -159,11 +136,11 @@ h1 {
 */
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
-    #header h1 {
+    .header h1 {
         font-size: 85px;
     }
 
-    #header h2 {
+    .header h2 {
         font-size: 25px;
         line-height: 40px;
     }
@@ -187,11 +164,11 @@ h1 {
         font-size: 30px;
     }
 
-    #header h1 {
+    .header h1 {
         font-size: 120px;
     }
 
-    #header h2 {
+    .header h2 {
         font-size: 28px;
         line-height: 40px;
     }

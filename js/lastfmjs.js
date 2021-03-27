@@ -10,7 +10,7 @@ fetch("https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=prezl
 
                     const track = response.recenttracks.track[0];
                     const line = '\u2014';
-                    const imageUrl = track.image[2]['#text'];
+                    const imageUrl = track.image[1]['#text'];
                     const artistAndTitle = track.artist['#text'] + " " + line + " " + track.name.toUpperCase();
 
                     const image = document.createElement('img');
@@ -64,7 +64,12 @@ fetch("https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=prezl
 
                     }
 
-                    document.body.appendChild(listening);
+                    const headerinner = document.getElementById('headerinner');
+                    const projectsinner = document.getElementById('projectsinner');
+                    
+                    headerinner.appendChild(listening);
+                    projectsinner.appendChild(listening.cloneNode(true));
+
 
                 });
         }
