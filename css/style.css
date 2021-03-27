@@ -1,3 +1,5 @@
+h2 {margin:0;}
+
 body {
     color: #4e4e4e;
     overflow-x: hidden;
@@ -21,7 +23,7 @@ body {
     background: #acacac;
 }
 
-header {
+body {
     background-image: -moz-linear-gradient(to right, #FF934F, #DA6563);
     background-image: -webkit-linear-gradient(to right, #FF934F, #DA6563);
     background-image: linear-gradient(90deg, #FF934F, #DA6563);
@@ -150,25 +152,6 @@ h1 {
 
 .listening {
     margin: 0 auto;
-    background-color: #f4f4f4;
-}
-
-.listening:hover {
-    background-color: #e8e8e8;
-    cursor: cell;
-}
-
-hr.hrBetween {
-    border-top: 1px solid #d1d1d1;
-    margin-left: 200px;
-    margin-right: 200px;
-}
-
-
-.credit {
-    font-family: 'Karla', sans-serif;
-    font-size: 11px;
-    text-transform: uppercase;
 }
 
 /*
@@ -215,9 +198,5 @@ hr.hrBetween {
 
     .interested h1 {
         font-size: 30px;
-    }
-
-    .listening {
-        padding: 4rem 8rem;
     }
 }

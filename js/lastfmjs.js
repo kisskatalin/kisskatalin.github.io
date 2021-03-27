@@ -28,8 +28,8 @@ fetch("https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=prezl
                         const currentlyListening_info = document.createElement('div');
                         currentlyListening_info.classList.add('currentlyListening_info');
 
-                        const listeningText = document.createElement('h1');
-                        listeningText.textContent = "What I'm listening to now:";
+                        const listeningText = document.createElement('h2');
+                        listeningText.textContent = "I'm listening to now:";
 
                         const artistAndTitleText = document.createElement('div');
                         artistAndTitleText.classList.add('title');
@@ -49,8 +49,8 @@ fetch("https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=prezl
                         const notListening_info = document.createElement('div');
                         notListening_info.classList.add('notListening_info');
 
-                        const notListeningText = document.createElement('h1');
-                        notListeningText.textContent = "What I was listening to recently:";
+                        const notListeningText = document.createElement('h2');
+                        notListeningText.textContent = "I was listening to:";
 
                         const artistAndTitleText = document.createElement('div');
                         artistAndTitleText.classList.add('title');
@@ -64,10 +64,7 @@ fetch("https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=prezl
 
                     }
 
-                    const footer = document.getElementById('footer');
-                    const contact = document.getElementById('contact');
-
-                    footer.insertBefore(listening, contact);
+                    document.body.appendChild(listening);
 
                 });
         }
