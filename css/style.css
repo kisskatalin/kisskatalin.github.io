@@ -90,7 +90,6 @@ body {
 
 #name:after {
     content:'\005F';
-    position: absolute;
     display: inline;
     -webkit-animation: line 1.4s infinite;
     animation: line 1.4s infinite;
@@ -261,6 +260,15 @@ body {
 
     .swiper-slide-container {
         height: 100%;
+    }
+
+    .swiper-slide {
+        min-width: 390px;
+    }
+
+    .projectscontainer .project {
+        min-width: 390px;
+        max-width: 390px;
     }
 
     h1 {
