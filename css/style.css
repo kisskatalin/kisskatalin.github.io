@@ -164,14 +164,6 @@ body {
     display: none;
 }
 
-.swiper-slide {
-    max-width: 390px;
-}
-
-.swiper-slide {
-    min-width: 75%;
-} 
-
 .projectscontainer {
     overflow-x: hidden;
     height: 100%;
@@ -259,16 +251,16 @@ body {
         height: 100%;
     }
 
-    #pages section {
-        height: auto;
-    }
-
     #projectsinner .main {
         grid-template-columns: 128px 1fr;
     }
 
     #projectsinner .main .pager {
         display: block;
+    }
+
+    .swiper-slide-container {
+        max-width: 390px;
     }
 
     h1 {
