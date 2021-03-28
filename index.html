@@ -37,12 +37,12 @@
             <div class="projectscontainer">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <a href="" class="project" style="background-image:url(./pic/01.png);">
+                  <figure class="project" style="background-image:url(./pic/01.png);">
                     <div class="projectinfo">
                       <p>Web design</p>
                       <h2>Fit Me, Baby!</h2>
                     </div>
-                  </a>
+                  </figure>
                 </div>
                 <div class="swiper-slide">Slide 2</div>
                 <div class="swiper-slide">Slide 3</div>
@@ -57,8 +57,29 @@
             direction: 'horizontal',
             slidesPerView: 1,
             spaceBetween: 0,
-            centeredSlides: false,		    
+            centeredSlides: false,
+            autoplay: {
+              delay: 4000,
+            },
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },		    
             loop: true,
+            breakpoints: {
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+              },
+              1024: {
+                slidesPerView: 4,
+                spaceBetween: 50,
+              },
+          }
           });
         </script>
     </div>
