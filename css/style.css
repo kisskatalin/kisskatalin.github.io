@@ -145,13 +145,69 @@ body {
 }
 
 #projectsinner {
+    display: grid;
+    grid-template-rows:8em 1fr 8.125em;
     color: #FF934F;
     background-color: #E8E8E8;
 }
 
+#projectsinner .main {
+    display: grid;
+    grid-template-columns: 128px 1fr;
+}
+
+.tns-controls {
+    display:none;
+}
+
+.tns-outer {
+    height: 100%;
+}
+
+.tns-ovh {
+    height: 100%;
+}
+
+.tns-inner {
+    height: 100%;
+}
+
+.projectscontainer {
+    height: 100%;
+}
+
 .projectscontainer .project {
-    background-color: red;
-    height: 500px;
+    position: relative;
+    background-color: #E8E8E8;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 100%;
+    margin: 0;
+}
+
+.projectscontainer .project .projectinfo {
+    position: absolute;
+    width: 100%;
+    height: 12.5em;
+    bottom: 0;
+    background: linear-gradient(180deg,  rgba(234, 120, 91, 0) 0%, rgba(234, 120, 91, 0.5) 50%, #FF934F 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 20px 24px 24px;
+}
+
+.projectscontainer .project .projectinfo h2 {
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 26px;
+    letter-spacing: -1.7px;
+    color: #E8E8E8;
 }
 
 #projectsinner .currentlyListening_info h2 {

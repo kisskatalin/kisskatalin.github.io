@@ -30,14 +30,22 @@
             </div>
         </section>
         <section class="w-100" id="projectsinner">
-            <div class="projectscontainer">
-                <div class="project">1</div>
-                <div class="project">2</div>
-                <div class="project">3</div>
-                <div class="project">4</div>
-                <div class="project">5</div>
+            <div class="">Kiss Katalin</div>
+            <div class="main">
+              <div>nyíl</div>
+              <div class="projectscontainer">
+                  <figure class="project" style="background-image:url(./pic/01.png);">
+                    <div class="projectinfo">
+                      <p>Web design</p>
+                      <h2>Fit Me, Baby!</h2>
+                    </div>
+                  </figure>
+                  <figure class="project">2</figure>
+                  <figure class="project">3</figure>
+                  <figure class="project">4</figure>
+                  <figure class="project">5</figure>
+              </div>
             </div>
-
             <script>
                 var slider = tns({
                   container: '.projectscontainer',
@@ -47,12 +55,8 @@
                   mouseDrag: true,
                   responsive: {
                     640: {
-                      edgePadding: 20,
-                      gutter: 20,
-                      items: 2
                     },
                     700: {
-                      gutter: 30
                     },
                     900: {
                       items: 4
