@@ -81,23 +81,9 @@
           </div>
         </section>
         <script>
-          mySwiperTeam = new Swiper ('.projectscontainer', {
-            // Optional parameters
-            direction: 'horizontal',
-            slidesPerView: 2,
-            spaceBetween: 0,
-            centeredSlides: false,		    
-            breakpoints: {
-              640: {
-                slidesPerView: 2,
-              },
-              768: {
-                slidesPerView: 3,
-              },
-              1024: {
-                slidesPerView: 4,
-              },
-          }
+          var swiper = new Swiper('.projectscontainer', {
+            slidesPerView: 4,
+            centeredSlides: false
           });
         </script>
     </div>
