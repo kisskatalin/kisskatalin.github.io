@@ -156,9 +156,6 @@ body {
     grid-template-columns: 128px 1fr;
 }
 
-.tns-controls {
-    display:none;
-}
 
 .tns-outer {
     height: 100%;
@@ -177,13 +174,7 @@ body {
 }
 
 .projectscontainer .project {
-    position: relative;
-    background-color: #E8E8E8;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 
-    height: 100%;
     margin: 0;
 }
 
