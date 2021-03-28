@@ -26,19 +26,21 @@ body {
     background-color: #FF934F;
     color: #E8E8E8;
     overflow-x: hidden;
+    height: 100vh;
 }
 
 #pages {
     flex-grow: 1;
     display: flex;
     transition: 1s;
-    height: 100%;
+    flex-direction: column;
 }
 
 #pages section {
     overflow: auto;
     min-width: 100%;
     overflow-y: auto;
+    height: 100vh;
 }
 
 .headerinner {
@@ -152,13 +154,23 @@ body {
 }
 
 #projectsinner .main {
+    width: 100%;
     display: grid;
-    grid-template-columns: 128px 1fr;
+    grid-template-columns: 100%;
+    overflow: hidden;
+}
+
+#projectsinner .main .pager {
+    display: none;
 }
 
 .swiper-slide {
     max-width: 390px;
 }
+
+.swiper-slide {
+    min-width: 75%;
+} 
 
 .projectscontainer {
     overflow-x: hidden;
@@ -238,6 +250,26 @@ body {
 */
 
 @media screen and (min-width: 60em) {
+    body {
+        height: auto;
+    }
+
+    #pages {
+        flex-direction: row;
+        height: 100%;
+    }
+
+    #pages section {
+        height: auto;
+    }
+
+    #projectsinner .main {
+        grid-template-columns: 128px 1fr;
+    }
+
+    #projectsinner .main .pager {
+        display: block;
+    }
 
     h1 {
         font-size: 30px;

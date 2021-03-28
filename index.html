@@ -14,7 +14,7 @@
   
   </head>
 
-<body class="vh-100">
+<body class="">
     <i class="target" id="header"></i>
     <i class="target" id="projects"></i>
 
@@ -33,7 +33,7 @@
         <section class="w-100" id="projectsinner">
             <div class="">Kiss Katalin</div>
             <div class="main">
-              <div>nyíl</div>
+              <div class="pager">nyíl</div>
             <div class="projectscontainer">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -55,16 +55,9 @@
           mySwiperTeam = new Swiper ('.projectscontainer', {
             // Optional parameters
             direction: 'horizontal',
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 0,
-            centeredSlides: false,
-            autoplay: {
-              delay: 4000,
-            },
-            navigation: {
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
-            },		    
+            centeredSlides: false,		    
             loop: true,
             breakpoints: {
               640: {
