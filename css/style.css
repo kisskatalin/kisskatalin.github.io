@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;700&display=swap');
+
 h2 {margin:0;}
 
 ::-webkit-scrollbar {
@@ -47,6 +49,25 @@ body {
     height: 100%;
 }
 
+.headerinner a {
+    color: #E8E8E8;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.headerinner a .text {
+    padding-right: 12px;
+}
+
+.headerinner a .img {
+    display: inline-block;
+    width: 61px;
+    height: 8px;
+    background-image: url(../img/arrowlight.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .headerinner h1 {
     font-family: 'Heebo', sans-serif;
     font-size: 120px;
@@ -66,7 +87,7 @@ body {
 }
 
 #name:after {
-    content:'|';
+    content:'\005F';
     position: absolute;
     display: inline;
     -webkit-animation: line 1.4s infinite;
@@ -121,6 +142,20 @@ body {
     bottom: 0;
     padding: 32px 0;
     width: 100%;
+}
+
+#projectsinner {
+    color: #FF934F;
+    background-color: #E8E8E8;
+}
+
+.projectscontainer .project {
+    background-color: red;
+    height: 500px;
+}
+
+#projectsinner .currentlyListening_info h2 {
+    color: #FF934F;
 }
 
 #header:target ~ #pages {

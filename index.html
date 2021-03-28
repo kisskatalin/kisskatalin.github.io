@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Katalin Kiss</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700,800,900"/>
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4/css/tachyons.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/lastfm_style.css"/>
     <script type="text/javascript" src="js/lastfmjs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 </head>
 
 <body class="vh-100">
@@ -21,19 +22,44 @@
             <div class="w-100 headerinner">
                 <div class="v-mid dtc tl ma0">
                     <h1 class="ma0 ttc tracked-tight fw5" id="name">Katalin<br> Kiss</h1>
-                    <h2 class="fw3">Front-End Web Developer
+                    <h2 class="fw2">Front-End Web Developer
                     <br>UX/UI Designer</h2>
                     <button id="more" class="fw5 f5 link" href="mailto:thekatezly@gmail.com">Contact Me</button>
                 </div>
-                <a href="#projects">Projects</a>
+                <a href="#projects"><span class="text">Projects</span> <span class="img"></span></a>
             </div>
         </section>
         <section class="w-100" id="projectsinner">
-            <h1>ABOUT</h1>
-            <p>
-              <a href="#header" class="bg1">HOME</a>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus praesentium ipsum esse autem quisquam earum accusantium cumque, ipsa ratione saepe sunt voluptatibus fuga perspiciatis reiciendis qui impedit nam itaque incidunt.
-            </p>
+            <div class="projectscontainer">
+                <div class="project">1</div>
+                <div class="project">2</div>
+                <div class="project">3</div>
+                <div class="project">4</div>
+                <div class="project">5</div>
+            </div>
+
+            <script>
+                var slider = tns({
+                  container: '.projectscontainer',
+                  items: 4,
+                  nav: false,
+                  controlsText: false,
+                  mouseDrag: true,
+                  responsive: {
+                    640: {
+                      edgePadding: 20,
+                      gutter: 20,
+                      items: 2
+                    },
+                    700: {
+                      gutter: 30
+                    },
+                    900: {
+                      items: 4
+                    }
+                  }
+                });
+              </script>
         </section>
     </div>
 </body>
