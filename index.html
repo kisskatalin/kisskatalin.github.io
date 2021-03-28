@@ -34,15 +34,15 @@
             <div class="">Kiss Katalin</div>
             <div class="main">
               <div>nyíl</div>
-            <div class="swiper-container-team">
+            <div class="projectscontainer">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <div class="project" style="background-image:url(./pic/01.png);">
+                  <a href="" class="project" style="background-image:url(./pic/01.png);">
                     <div class="projectinfo">
                       <p>Web design</p>
                       <h2>Fit Me, Baby!</h2>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="swiper-slide">Slide 2</div>
                 <div class="swiper-slide">Slide 3</div>
@@ -52,19 +52,12 @@
           </div>
         </section>
         <script>
-          mySwiperTeam = new Swiper ('.swiper-container-team', {
+          mySwiperTeam = new Swiper ('.projectscontainer', {
             // Optional parameters
             direction: 'horizontal',
             slidesPerView: 1,
             spaceBetween: 0,
-            centeredSlides: false,
-            autoplay: {
-              delay: 4000,
-            },
-            navigation: {
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
-            },		    
+            centeredSlides: false,		    
             loop: true,
           });
         </script>

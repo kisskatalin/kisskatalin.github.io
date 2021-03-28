@@ -156,29 +156,23 @@ body {
     grid-template-columns: 128px 1fr;
 }
 
-
-.tns-outer {
-    height: 100%;
-}
-
-.tns-ovh {
-    height: 100%;
-}
-
-.tns-inner {
-    height: 100%;
+.swiper-slide {
+    max-width: 390px;
 }
 
 .projectscontainer {
+    overflow-x: hidden;
     height: 100%;
 }
 
 .projectscontainer .project {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     margin: 0;
-}
-
-.swiper-container-team {
-    overflow-x: hidden;
 }
 
 .projectscontainer .project .projectinfo {
