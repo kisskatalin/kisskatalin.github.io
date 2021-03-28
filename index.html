@@ -92,13 +92,15 @@
           </div>
             <script>
               var swiper = new Swiper('.swiper-container', {
+                speed: 1200,
+		            direction: 'horizontal',
                 slidesPerView: 4,
                 spaceBetween: 0,
                 centeredSlides: false,
-                pagination: {
-                  el: '.swiper-pagination',
-                  clickable: true,
-                },
+                autoplay: {
+			            delay: 4000,
+		            },
+                loop: true,
               });
             </script>
         </section>
