@@ -163,6 +163,15 @@ body {
     display: none;
 }
 
+#projectsinner .main .pager a .img {
+    display: inline-block;
+    width: 61px;
+    height: 8px;
+    background-image: url(../img/arrowdark.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .projectscontainer {
     overflow-x: hidden;
     height: 100%;
@@ -271,7 +280,10 @@ body {
     }
 
     #projectsinner .main .pager {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0 32px;
     }
 
     .swiper-slide-container {
