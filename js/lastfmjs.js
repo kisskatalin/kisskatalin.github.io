@@ -64,11 +64,19 @@ fetch("https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=prezl
 
                     }
 
-                    const headerinner = document.getElementById('headerinner');
-                    const projectsinner = document.getElementById('projectsinner');
+                    //const headerinner = document.getElementById('headerinner');
+                    //const projectsinner = document.getElementById('projectsinner');
                     
-                    headerinner.appendChild(listening);
-                    projectsinner.appendChild(listening.cloneNode(true));
+                    //headerinner.appendChild(listening);
+                    //projectsinner.appendChild(listening.cloneNode(true));
+
+                    const footer = document.getElementById('footer');
+                    const footer2 = document.getElementById('footer2');
+                    const social = document.getElementById('social');
+                    const social2 = document.getElementById('social2');
+
+                    footer.insertBefore(listening, social);
+                    footer2.insertBefore(listening.cloneNode(true), social2);
 
 
                 });

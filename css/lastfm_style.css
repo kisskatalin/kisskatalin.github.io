@@ -1,5 +1,5 @@
 .currentlyListening, .notListening {
-    display: flex;
+    display: inline-flex;
 }
 
 .currentlyListening_info, .notListening_info {
