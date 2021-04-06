@@ -261,7 +261,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: absolute;
     bottom: 0;
     width: 100%;
     padding: 32px 128px;
@@ -420,6 +419,10 @@ body {
 
     #footer #social {
         display: block;
+    }
+
+    #footer2 {
+        position: absolute;
     }
 
     #footer2 .listening {
