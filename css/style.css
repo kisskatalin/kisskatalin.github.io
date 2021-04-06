@@ -43,11 +43,15 @@ body {
     height: 100vh;
 }
 
+#headerinner {
+    position: relative;
+}
+
 .headerinner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 32px 0 128px;
+    padding: 0 16px;
     height: 100%;
 }
 
@@ -72,19 +76,18 @@ body {
 
 .headerinner h1 {
     font-family: 'Heebo', sans-serif;
-    font-size: 120px;
-    line-height: 110px;
-    letter-spacing: -8px;
+    font-size: 105px;
+    line-height: 95px;
+    letter-spacing: -7px;
     color: #E8E8E8;
 }
 
 .headerinner h2 {
     font-family: 'Heebo', sans-serif;
-    font-size: 28px;
-    line-height: 28px;
-    margin:20px 0 32px 0;
-    letter-spacing: 2px;
-    line-height: 35px;
+    font-size: 26px;
+    line-height: 26px;
+    margin: 20px 0 32px 0;
+    letter-spacing: 1.8px;
     color: #E8E8E8;
 }
 
@@ -247,7 +250,11 @@ body {
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: 32px 128px;
+    padding: 16px;
+}
+
+#footer #social {
+    display: none;
 }
 
 #footer2 {
@@ -258,6 +265,10 @@ body {
     bottom: 0;
     width: 100%;
     padding: 32px 128px;
+}
+
+#footer2 .listening {
+    display: none;
 }
 
 #social {
@@ -322,6 +333,26 @@ body {
         height: auto;
     }
 
+    .headerinner {
+        padding: 0 32px 0 128px;
+    }
+
+    .headerinner h1 {
+        font-size: 120px;
+        line-height: 110px;
+        letter-spacing: -8px;
+    }
+
+    .headerinner h2 {
+        font-family: 'Heebo', sans-serif;
+        font-size: 28px;
+        line-height: 28px;
+        margin: 20px 0 32px 0;
+        letter-spacing: 2px;
+        line-height: 35px;
+        color: #E8E8E8;
+    }
+
     #pages {
         flex-direction: row;
         height: 100%;
@@ -381,5 +412,17 @@ body {
 
     .interested h1 {
         font-size: 30px;
+    }
+
+    #footer {
+        padding: 32px 128px;
+    }
+
+    #footer #social {
+        display: block;
+    }
+
+    #footer2 .listening {
+        display: block;
     }
 }

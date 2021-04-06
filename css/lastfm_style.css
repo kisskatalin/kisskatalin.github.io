@@ -60,12 +60,14 @@
 
 .currentlyListening_info .title {
     font-weight: 200;
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .notListening_info .title {
-    font-weight: 300;
-    font-size: 20px;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 
@@ -74,7 +76,13 @@
         font-size: 18px;
     }
 
+    .currentlyListening_info .title {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
     .notListening_info .title {
         font-size: 18px;
+        line-height: 22px;
     }
 }

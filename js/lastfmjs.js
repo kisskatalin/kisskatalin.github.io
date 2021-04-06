@@ -6,7 +6,7 @@ fetch("https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=prezl
                     console.log(response);
 
                     const listening = document.createElement('div');
-                    listening.classList.add('db-ns', 'dn', 'listening');
+                    listening.classList.add('listening');
 
                     const track = response.recenttracks.track[0];
                     const line = '\u2014';
