@@ -20,7 +20,6 @@
 .notListening_info h2 {
     font-size: 16px;
     line-height: 16px;
-    color: #E8E8E8;
     font-weight: 400;
     margin-bottom: 8px;
 }
@@ -51,7 +50,7 @@
     height: 56px;
     width: 56px;
     border-radius: 50%;
-    border: 2px solid rgba(232, 232, 232, 0.5);
+    border: 2px solid rgba(255, 147, 79, 0.5);
     padding: 3px;
 }
 
