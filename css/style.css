@@ -228,6 +228,10 @@ body {
     border: 2px solid rgba(255, 147, 79, 0.5);
 }
 
+#projectslink {
+    display: none;
+}
+
 #header:target ~ #pages {
     transform: translateX(-0%);
 }
@@ -344,6 +348,10 @@ body {
         align-items: center;
         justify-content: flex-start;
         padding: 0 32px;
+    }
+
+    #projectslink {
+        display: block;
     }
 
     .swiper-slide-container {
