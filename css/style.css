@@ -197,6 +197,10 @@ body {
     padding: 20px 24px 24px;
 }
 
+.projectscontainer .project .projectinfo p {
+    margin: 0;
+}
+
 .projectscontainer .project .projectinfo h2 {
     font-family: Heebo;
     font-style: normal;
@@ -234,12 +238,20 @@ body {
 }
 
 #social {
-    font-size: 12px;
+    font-size: 16px;
+}
+
+#social a {
+    color: #E8E8E8;
+    margin-right: 28px;
+}
+
+#social a:last-child {
+    margin-right: 0;
 }
 
 #social .fab {
-    padding: 2px;
-    margin-right: 32px;
+    padding: 4px;
 }
 
 /*
@@ -305,7 +317,6 @@ body {
     .swiper-slide-container {
         height: 100%;
     }
-
     .swiper-slide {
         min-width: 390px;
     }
