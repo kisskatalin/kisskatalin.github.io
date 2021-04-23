@@ -1,0 +1,26 @@
+<html>
+    <head></head>
+    <body>
+        <div class="cursor"></div>
+        <style>
+            .cursor {
+                position: fixed;
+                width: 150px;
+                height: 150px;
+                background: #A14EBF;
+                border-radius: 50%;
+                filter: blur(100px);
+            }
+        </style>
+
+        <script>
+            const mouseCursor = document.querySelector('.cursor');
+            window.addEventListener('mousemove', cursor);
+
+            function cursor(e) {
+                mouseCursor.style.top = e.clientY + "px";
+                mouseCursor.style.left = e.clientX + "px";
+            }
+        </script>
+    </body>
+</html>

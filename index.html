@@ -14,7 +14,21 @@
   
   </head>
 
-<body class="">
+<body>
+  <style>
+    .cursor {
+        position: fixed;
+        width: 200px;
+        height: 200px;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(150, 0, 204, 0.7) 0%, rgba(211, 164, 227, 0.65) 100%);;
+        border-radius: 50%;
+        filter: blur(50px);
+        transition: 1.0s;
+        z-index: 0;
+    }
+</style>
+
+    <div class="cursor"></div>
     <i class="target" id="header"></i>
     <i class="target" id="projects"></i>
 
@@ -46,16 +60,16 @@
                   <div class="swiper-slide">
                     <figure onclick="window.open('mylink.htm','_blank')" class="project" style="background-image:url(./pic/01.png);">
                       <div class="projectinfo">
-                        <p>Web design</p>
-                        <h2>Fit Me, Baby!</h2>
+                        <p>UI Design / UX Design</p>
+                        <h2>Last.fm</h2>
                       </div>
                     </figure>
                   </div>
                   <div class="swiper-slide">
                     <figure class="project" style="background-image:url(./pic/01.png);">
                       <div class="projectinfo">
-                        <p>Web design</p>
-                        <h2>Fit Me, Baby!</h2>
+                        <p>UI Design</p>
+                        <h2>Polaroid</h2>
                       </div>
                     </figure>
                   </div>
@@ -87,6 +101,17 @@
             <div id="social2"> <a href="https://twitter.com/theprezli" target="_blank"><i class="fab fa-twitter"></i></a> <a href="https://www.linkedin.com/in/katalin-kiss/" target="_blank"><i class="fab fa-linkedin-in"></i></a> <a href="https://www.behance.net/prezli" target="_blank"><i class="fab fa-behance"></i></a> <a href="https://dribbble.com/prezli" target="_blank"><i class="fab fa-dribbble"></i></a></div> 
           </div>
         </section>
+
+        <script>
+          const mouseCursor = document.querySelector('.cursor');
+          window.addEventListener('mousemove', cursor);
+
+          function cursor(e) {
+              mouseCursor.style.top = e.clientY + "px";
+              mouseCursor.style.left = e.clientX + "px";
+          }
+        </script>
+
         <script>
           var swiper = new Swiper('.projectscontainer', {
             slidesPerView: 4,

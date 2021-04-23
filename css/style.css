@@ -231,6 +231,10 @@ body {
     border: 2px solid rgba(255, 147, 79, 0.5);
 }
 
+#projectsinner .notListening .albumImage {
+    border: 2px solid rgba(255, 147, 79, 0.5);
+}
+
 #projectslink {
     display: none;
 }
