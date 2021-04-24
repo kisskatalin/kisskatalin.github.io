@@ -291,6 +291,10 @@ body {
     padding: 4px;
 }
 
+#social a:hover {
+    color: rgba(227, 164, 227, 1);
+}
+
 #social2 a {
     color: #FF934F;
     margin-right: 28px;
@@ -298,6 +302,10 @@ body {
 
 #social2 a:last-child {
     margin-right: 0;
+}
+
+#social2 a:hover {
+    color: rgba(227, 164, 227, 1);
 }
 
 #social2 .fab {
