@@ -119,22 +119,20 @@ body {
 }
 
 #more {
+    line-height: 1rem;
     padding: 1rem;
     color: #E8E8E8;
     text-transform: uppercase;
     border: none;
     cursor: pointer;
-    transition: 0.5s ease-out;
     background-color: #111;
 }
 
 #more:hover{
-    background-color: #E8E8E8;
-    color: #111;
+    color: rgba(227, 164, 227, 1);
     bottom: 0;
     left: 0;
     z-index: -1;
-    transition: 0.5s ease-in-out;
 }
 
 #more:hover::after{
@@ -248,7 +246,8 @@ body {
 }
 
 #footer {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr auto;
     align-items: center;
     justify-content: space-between;
     position: absolute;
@@ -363,15 +362,21 @@ body {
         font-size: 120px;
         line-height: 110px;
         letter-spacing: -8px;
+        margin-bottom: 20px;
+    }
+
+    .subtitles {
+        margin-bottom: 32px;
     }
 
     .headerinner h2 {
         font-family: 'Heebo', sans-serif;
         font-size: 28px;
         line-height: 28px;
-        margin: 20px 0 32px 0;
+        margin-top: 0;
+        margin-bottom: 12px;
         letter-spacing: 2px;
-        line-height: 35px;
+        line-height: 28px;
         color: #E8E8E8;
     }
 
@@ -405,6 +410,10 @@ body {
 
     #projectslink {
         display: block;
+    }
+
+    #projectslink:hover {
+        color: rgba(227, 164, 227, 1);
     }
 
     .swiper-slide-container {

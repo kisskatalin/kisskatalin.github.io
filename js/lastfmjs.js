@@ -76,7 +76,6 @@ fetch("https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=prezl
                     const social2 = document.getElementById('social2');
 
                     footer.insertBefore(listening, social);
-                    footer2.insertBefore(listening.cloneNode(true), social2);
 
 
                 });
