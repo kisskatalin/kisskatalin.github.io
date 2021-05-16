@@ -294,21 +294,13 @@ body {
     color: rgba(227, 164, 227, 1);
 }
 
-#social2 a {
+#projectsinner #social a {
     color: #FF934F;
     margin-right: 28px;
 }
 
-#social2 a:last-child {
-    margin-right: 0;
-}
-
-#social2 a:hover {
+#projectsinner #social a:hover {
     color: rgba(227, 164, 227, 1);
-}
-
-#social2 .fab {
-    padding: 4px;
 }
 
 /*
@@ -374,7 +366,7 @@ body {
         font-size: 28px;
         line-height: 28px;
         margin-top: 0;
-        margin-bottom: 12px;
+        margin-bottom: 16px;
         letter-spacing: 2px;
         line-height: 28px;
         color: #E8E8E8;
@@ -391,10 +383,17 @@ body {
         padding: 0 128px;
     }
 
-    #projectsinner #name {
+    #projectsinner #name2 {
         font-size: 36px;
         line-height: 34px;
         letter-spacing: -2.4px;
+    }
+
+    #name2:after {
+        content:'\005F';
+        display: inline;
+        -webkit-animation: line 1.4s infinite;
+        animation: line 1.4s infinite;
     }
 
     #projectsinner .main {
