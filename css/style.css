@@ -262,16 +262,6 @@ body {
     display: none;
 }
 
-#footer #credit {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 10px;
-    line-height: 10px;
-    font-family: 'Work Sans', sans-serif;
-    text-transform: uppercase;
-    opacity: 0.75;
-}
-
 #footer2 {
     display: flex;
     align-items: center;
@@ -282,6 +272,10 @@ body {
 }
 
 #footer2 .listening {
+    display: none;
+}
+
+#credit {
     display: none;
 }
 
@@ -338,7 +332,7 @@ body {
     }
 
     .listening {
-        padding: 2rem;
+        padding: 0;
     }
 
     .about-f2 {
@@ -470,6 +464,19 @@ body {
 
     #footer #social {
         display: block;
+    }
+
+    #credit {
+        position: absolute;
+        bottom: 20px;
+        right: 32px;
+        display: flex;
+        justify-content: flex-end;
+        font-size: 10px;
+        line-height: 10px;
+        font-family: 'Work Sans', sans-serif;
+        text-transform: uppercase;
+        opacity: 0.75;
     }
 
     #name2 {
