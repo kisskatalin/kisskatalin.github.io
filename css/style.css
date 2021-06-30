@@ -140,7 +140,7 @@ body {
     z-index: -1;
 }
 
-#more:hover::after{
+#more:hover:after{
     height: 100%;
 }
 
@@ -306,6 +306,10 @@ body {
 
 #name2 {
     display: none;
+}
+
+.listening {
+    padding: 0;
 }
 
 /*
