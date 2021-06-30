@@ -308,6 +308,10 @@ body {
     color: rgba(227, 164, 227, 1);
 }
 
+#name2 {
+    display: none;
+}
+
 /*
     MEDIUM
 */
@@ -454,6 +458,10 @@ body {
     }
 
     #footer #social {
+        display: block;
+    }
+
+    #name2 {
         display: block;
     }
 
