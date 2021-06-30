@@ -34,6 +34,8 @@
             </div>
           <div id="footer">
             <div id="social"> <a href="https://twitter.com/theprezli" target="_blank"><i class="fab fa-twitter"></i></a> <a href="https://www.linkedin.com/in/katalin-kiss/" target="_blank"><i class="fab fa-linkedin-in"></i></a> <a href="https://www.behance.net/prezli" target="_blank"><i class="fab fa-behance"></i></a> <a href="https://dribbble.com/prezli" target="_blank"><i class="fab fa-dribbble"></i></a></div> 
+            <div></div>
+            <div id="credit">Design & Code by Katalin Kiss</div>
           </div>
         </section>
         <section class="w-100" id="projectsinner">
@@ -102,7 +104,21 @@
         <script>
           var swiper = new Swiper('.projectscontainer', {
             slidesPerView: 4,
-            centeredSlides: false,		    
+            centeredSlides: false,
+            breakpoints: {
+            // when window width is >= 320px
+            320: {
+              slidesPerView: 2,
+            },
+            // when window width is >= 480px
+            480: {
+              slidesPerView: 2,
+            },
+            // when window width is >= 640px
+            640: {
+              slidesPerView: 4,
+            }
+            }		    
           });
         </script>
     </div>
