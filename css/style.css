@@ -144,10 +144,6 @@ body {
     height: 100%;
 }
 
-.listening {
-
-}
-
 #projectsinner {
     display: grid;
     grid-template-rows:8em 1fr 8.125em;
