@@ -38,6 +38,7 @@ body {
 }
 
 #pages section {
+    position: relative;
     overflow: auto;
     min-width: 100%;
     overflow-y: auto;
@@ -460,6 +461,7 @@ body {
 
     #footer {
         padding: 32px 128px;
+        min-height: 70px;
     }
 
     #footer #social {
