@@ -1,0 +1,39 @@
+.projects {
+    font-weight: 300;
+    color: #515151;
+    background-color: #E8E8E8;
+    background-image: none;
+    padding:4em 12em;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 26px;
+    letter-spacing: -1.7px;
+}
+
+h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: -1.5px;
+}
+
+/*
+    MEDIUM
+*/
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+
+}
+
+/*
+    LARGE
+*/
+
+@media screen and (min-width: 60em) {
+    
+}
