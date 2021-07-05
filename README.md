@@ -1,4 +1,4 @@
-Live preview: https://kisskatalin.gitbub.io
+Live preview: https://kisskatalin.github.io
 ## Credit
 
 - [x](http://tachyons.io/)
