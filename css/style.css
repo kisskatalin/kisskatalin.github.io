@@ -20,6 +20,8 @@ h2 {margin:0;}
 }
 
 body {
+    font-size: 16px;
+    line-height: 24px;
     font-family: 'Heebo', sans-serif;
     background-image: -moz-linear-gradient(to right, #FF934F, #FF6F61);
     background-image: -webkit-linear-gradient(to right, #FF934F, #FF6F61);
