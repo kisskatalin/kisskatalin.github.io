@@ -101,11 +101,11 @@ body {
 }
 
 #name:after {
-    display: none;
     content:'\005F';
     display: inline;
     -webkit-animation: line 1.4s infinite;
     animation: line 1.4s infinite;
+    display: none;
 }
 
 @-webkit-keyframes line {
@@ -408,11 +408,11 @@ body {
     }
 
     #name2:after {
-        display: none;
-        content:'\005F';
         display: inline;
+        content:'\005F';
         -webkit-animation: line 1.4s infinite;
         animation: line 1.4s infinite;
+        display: none;
     }
 
     #projectsinner .main {
