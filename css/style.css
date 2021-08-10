@@ -101,6 +101,7 @@ body {
 }
 
 #name:after {
+    display: none;
     content:'\005F';
     display: inline;
     -webkit-animation: line 1.4s infinite;
@@ -407,6 +408,7 @@ body {
     }
 
     #name2:after {
+        display: none;
         content:'\005F';
         display: inline;
         -webkit-animation: line 1.4s infinite;
