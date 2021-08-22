@@ -6,6 +6,13 @@
     padding:4em 12em;
 }
 
+.header {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 h2 {
     font-style: normal;
     font-weight: 500;
