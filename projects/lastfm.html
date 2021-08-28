@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,29 +11,49 @@
 
 <body id="lastfm" class="projects">
 
-    <div class="header" style="">
+    <div class="header">
     
-        <h2>Last.fm Redesign</h2>
-        <p class="info">Client: <span style="font-weight: 500;">Last.fm</span> • Duration: May 2021 – August 2021 • Tools: Photoshop, Figma, Miro, paper and pen</p>
-        <p>The project was made for Udacity UX design course.</p>
+        <div class="info">
+            <h2>Last.fm Redesign</h2>
+            <p class="subinfo">Client: <span style="font-weight: 500;">Last.fm</span> • Duration: <span style="font-weight: 500;">May 2021 – August 2021</span> • Tools: <span style="font-weight: 500;">Photoshop, Figma, Miro, paper and pen</span></p>
+            <p class="subtitle">The project was made for Udacity UX design course.</p>
+        </div>
+
+        <div class="pic" style="background-image:url(../pic/lastfm.png);">
+            <div class="overlay"></div>
+        </div>
     
     </div>
-    <main class="projects_section">
-    <p>Last.fm is a website that provides you to scrobble songs from online music services (e.g. Spotify, Apple Music, etc.) where you listen to music. Last.fm creates recommendations, reports and statistics based on your listening history. You can love your favorite tracks, view statistics of your personal songs, artists, albums.</p>
+    <main>
 
-    <section style="background-color: #c8c8c8;">
-    <h3>Problem Statement</h3>
-
-    The Last.fm mobile application has limited features and often navigates the users to their website.
-
-    <figure class="projects_pic">
-        <img src="../pic/lastfm_1.png">
-    </figure>
+    <section  class="projects_section">
+        <div class="container">
+            Last.fm is a website that provides you to scrobble songs from online music services (e.g. Spotify, Apple Music, etc.) where you listen to music. Last.fm creates recommendations, reports and statistics based on your listening history. You can love your favorite tracks, view statistics of your personal songs, artists, albums.
+        </div>
     </section>
-    <h3>Solution</h3>
 
-    The upgraded design of the Last.fm mobile application has the same features that are only available on the website now. Compared to the website, the redesigned mobile application is easier to use as it contains all the important functions that were missing while the interface got less complex.
+    <section  class="projects_section darkgrey">
+        <div class="container">
+            <h3>Problem Statement</h3>
 
+            <p>The Last.fm mobile application has limited features and often navigates the users to their website.</p>
+
+            <figure class="projects_pic">
+                <img src="../pic/lastfm_1.png">
+            </figure>
+        </div>
+    </section>
+
+    <section  class="projects_section white">
+        <div class="container">
+            <h3>Solution</h3>
+
+            <p>The upgraded design of the Last.fm mobile application has the same features that are only available on the website now. Compared to the website, the redesigned mobile application is easier to use as it contains all the important functions that were missing while the interface got less complex.</p>
+        </div>
+    </section>
+
+    <section  class="projects_section">
+        <div class="container">
     <h3>Research</h3>
 
     I wanted to learn about how the users use the current mobile application and find out how they feel about the difference between it and the website.
@@ -50,14 +69,14 @@
  
     <h4>User Research Plan</h4>
 
-    <b>Participants</b>
+    <h5>Participants</h5>
 
     <ul>
         <li>Users who use Last.fm for years</li>
         <li>Users who have used/are currently using the Last.fm mobile application</li>
     </ul>
 
-    <span style="font-weight: bold;">6 participants</span> were interviewed about what they use and what they like or dislike about the current mobile application.
+    <span style="font-weight: 400;">6 participants</span> were interviewed about what they use and what they like or dislike about the current mobile application.
     <br>
     <br>
     In-person semi-structured interview questions:
@@ -81,7 +100,7 @@
     
     <br>
     <br>
-    <span style="font-weight: bold;">69 participants</span> filled out a survey about what they use on Last.fm. 
+    <span style="font-weight: 400;">69 participants</span> filled out a survey about what they use on Last.fm. 
     <br>
     <br>
     Survey questions:
@@ -96,76 +115,82 @@
     </ol>
     <br>
     All the info given helped me to fix and improve the mobile application.
+    </div>
+    </section>
 
-    <h3>Analysis</h3>
+    <section  class="projects_section white">
+        <div class="container">
+            <h3>Analysis</h3>
 
-    <figure class="projects_pic">
-        <img src="../pic/lastfm/affinitymap.jpg">
-        <caption>Affinity map from the user research</caption>
-    </figure>
+            <figure class="projects_pic">
+                <img src="../pic/lastfm/affinitymap.jpg">
+                <caption>Affinity map from the user research</caption>
+            </figure>
 
-    <h4>Key findings based on the users' needs:</h4>
+            <h4>Key findings based on the users' needs:</h4>
 
-    <p>1) The participants prefer the website over the mobile application</p>
-    They find the mobile application limited compared to the website.
-    <br>“I miss the edit function for the scrobbles, so I still have to go the website if i want to change some tags.”
-    <br>“I miss a better and longer overview of the listening history.”
-    <br>“The settings are very limited. It literally just gives you the option to turn off scrobbling.”
+            <p>1) The participants prefer the website over the mobile application</p>
+            They find the mobile application limited compared to the website.
+            <br>“I miss the edit function for the scrobbles, so I still have to go the website if i want to change some tags.”
+            <br>“I miss a better and longer overview of the listening history.”
+            <br>“The settings are very limited. It literally just gives you the option to turn off scrobbling.”
 
-    <p>2) Some participants are curious about what others are listening to</p>
-    “I want to see what the friends listen to.”
-    <br>“I listen to music what I like and what others enjoy.”
-    <br>“On the website, I like to check out other members' profiles.”
+            <p>2) Some participants are curious about what others are listening to</p>
+            “I want to see what the friends listen to.”
+            <br>“I listen to music what I like and what others enjoy.”
+            <br>“On the website, I like to check out other members' profiles.”
 
-    <p>3) The 30% of the participants are Last.fm Pro members</p>
+            <p>3) The 30% of the participants are Last.fm Pro members</p>
 
-    <h4>Key findings based on the users' behaviors:</h4>
+            <h4>Key findings based on the users' behaviors:</h4>
 
-    <p>4) Just a few of them use the mobile application more often than the website.</p>
-    “I use the mobile app on daily basis, the website on weekly basis. The app is just a tap away, so I open it when I'm bored.”
-    <br>“I use the website because I can get better info on it.”
-    <br>“I check out the website on daily basis. I don't find the mobile app useable.”
+            <p>4) Just a few of them use the mobile application more often than the website.</p>
+            “I use the mobile app on daily basis, the website on weekly basis. The app is just a tap away, so I open it when I'm bored.”
+            <br>“I use the website because I can get better info on it.”
+            <br>“I check out the website on daily basis. I don't find the mobile app useable.”
 
-    <p>5) The participants checks out the reports/statistics on daily or weekly basis.</p>
-    “I use the app on daily basis and check out the weekly reports.”
-    <br>“I used to check the reports weekly before, but now I just wait for their message monthly.”
+            <p>5) The participants checks out the reports/statistics on daily or weekly basis.</p>
+            “I use the app on daily basis and check out the weekly reports.”
+            <br>“I used to check the reports weekly before, but now I just wait for their message monthly.”
 
-    <p>6) Just a few of them check out what Last.fm offers them as recommendation. They use other products for it.</p>
+            <p>6) Just a few of them check out what Last.fm offers them as recommendation. They use other products for it.</p>
 
-    <p>7) None of the participants communicate with other members by sending messages to them via the inbox or on their profiles.</p> 
+            <p>7) None of the participants communicate with other members by sending messages to them via the inbox or on their profiles.</p> 
+        </div>
+    </section>
 
-    <h3>Design: Concepts & Sketching</h3>
+            <h3>Design: Concepts & Sketching</h3>
 
-    <figure class="projects_pic">
-        <img src="../pic/lastfm/themesandopportunities.jpg">
-        <caption>Themes and opportunities based on the user interviews</caption>
-    </figure>
+            <figure class="projects_pic">
+                <img src="../pic/lastfm/themesandopportunities.jpg">
+                <caption>Themes and opportunities based on the user interviews</caption>
+            </figure>
 
-    <h4>Research finding applied to the design</h4>
+            <h4>Research finding applied to the design</h4>
 
-    <ul>
-        <li>Since the participants totally skip the index page with the recommendations on the website, the new index page is their scrobbles.</li>
-        <li>The users can edit their scrobbles.</li>
-        <li>Recommendations are moved to another page.</li>
-        <li>The message function is entirely removed.</li>
-    </ul>
+            <ul>
+                <li>Since the participants totally skip the index page with the recommendations on the website, the new index page is their scrobbles.</li>
+                <li>The users can edit their scrobbles.</li>
+                <li>Recommendations are moved to another page.</li>
+                <li>The message function is entirely removed.</li>
+            </ul>
 
-    <figure class="projects_pic">
-        <img src="../pic/lastfm/featureprioritization.jpg">
-        <caption>Feature prioritization</caption>
-    </figure>
+            <figure class="projects_pic">
+                <img src="../pic/lastfm/featureprioritization.jpg">
+                <caption>Feature prioritization</caption>
+            </figure>
 
-    <h4>Sketch</h4>
+            <h4>Sketch</h4>
 
-    <figure class="projects_pic">
-        <img src="../pic/lastfm/sketch_1.png">
-        <caption>Crazy 8</caption>
-    </figure>
+            <figure class="projects_pic">
+                <img src="../pic/lastfm/sketch_1.png">
+                <caption>Crazy 8</caption>
+            </figure>
 
-    <figure class="projects_pic">
-        <img src="../pic/lastfm/sketch_2.jpg">
-        <caption>Loading screen, signing in screen and main screen</caption>
-    </figure>
+            <figure class="projects_pic">
+                <img src="../pic/lastfm/sketch_2.jpg">
+                <caption>Loading screen, signing in screen and main screen</caption>
+            </figure>
 
     <h3>Low-fidelity design</h3>
 

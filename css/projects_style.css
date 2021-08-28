@@ -11,8 +11,21 @@ body {
     background-image: none;
 }
 
-.projects_section {
-    padding: 4em 12em;
+.projects_section .container {
+    padding: 2em 12em;
+}
+
+.white  {
+    background-color: #ffffff;
+}
+
+.lightgrey  {
+    background-color: #d6d6d6;
+}
+
+.darkgrey {
+    color: #fff;
+    background-color:#515151;
 }
 
 .projects_pic {
@@ -28,30 +41,37 @@ body {
     max-width: 800px;
 }
 
-.header {
-    width: 100%;
-    height: 250px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.header .subinfo  {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
 }
 
-.header .info  {
+.header .subtitle  {
     font-size: 12px;
+    line-height: 16px;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 
 #lastfm .header {
-    background: #D51007;
     color: #fff;
-    text-align: center;
+    background-color: #D60F07;
 }
 
+#lastfm .header .pic .overlay {
+    position: relative;
+}
+
+#lastfm .header .pic .overlay {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(90deg, #D60F07 0%, rgba(234, 120, 91, 0.35) 35%, #D60F07 100%);};
+
 h2 {
-    font-style: normal;
     font-weight: 500;
     font-size: 26px;
     line-height: 26px;
@@ -59,20 +79,27 @@ h2 {
 }
 
 h3 {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 42px;
+    font-weight: 200;
+    font-size: 48px;
     line-height: 56px;
     letter-spacing: -1.5px;
-    color: #fff;
+    margin-bottom: 36px;
 }
 
 h4 {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 16px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
     letter-spacing: -1px;
+    margin: 20px 0;
+}
+
+h5 {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -1px;
+    margin: 16px 0;
 }
 
 /*
@@ -81,6 +108,7 @@ h4 {
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
 
+
 }
 
 /*
@@ -88,5 +116,33 @@ h4 {
 */
 
 @media screen and (min-width: 60em) {
+
+    .header {
+        width: 100%;
+        height: 400px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 60% 40%;
+        grid-column-gap: 12px;
+    }
+    
+    .header .info {
+        padding-left: 12em;
+    }
+    
+    .header .pic {
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .header h2 {
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: -1.4px;
+        margin-bottom: 24px;
+        font-weight: 500;
+    }
     
 }
