@@ -76,7 +76,7 @@ body {
 }
 
 #lastfm .header {
-    color: #fff;
+    color: #E8E8E8;
     background-color: #D60F07;
 }
 
@@ -85,12 +85,16 @@ body {
 }
 
 #billpay .header {
-    color: #fff;
+    color: #E8E8E8;
     background-color: #FF5F00;
 }
 
 #billpay .header .pic .overlay {
     background: linear-gradient(90deg, #FF5F00 0%, rgba(214, 15, 7, 0) 45%);
+}
+
+#billpay .persona .info .title {
+    color: #FF5F00;
 }
 
 h2 {
@@ -128,13 +132,37 @@ h5 {
 .double_figure {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 12px;
+    grid-column-gap: 24px;
 }
 
 .persona {
-    margin: 4em 12em;
-    background: #fff;
-    padding: 4em;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 24px;
+    margin: 2em 8em;
+    background: rgb(245, 245, 245);
+    padding: 3em;
+}
+
+.persona .info .title {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -1px;
+    margin-bottom: 16px;
+}
+
+.persona .info .text {
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.persona .pic img {
+    width: 192px;
+    height: 192px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 /*
