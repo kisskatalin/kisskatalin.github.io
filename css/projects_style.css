@@ -135,6 +135,10 @@ h5 {
     grid-column-gap: 24px;
 }
 
+.mockup {
+    padding: 0 4em;
+}
+
 .persona {
     display: grid;
     grid-template-columns: auto 1fr;
