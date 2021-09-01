@@ -42,6 +42,10 @@ body {
     max-width: 800px;
 }
 
+.projects_pic2 img {
+    max-width: 100%;
+}
+
 .projects_pic figcaption {
     font-size: 12px;
     line-height: 16px;
