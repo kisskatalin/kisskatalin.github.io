@@ -4,122 +4,95 @@
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Katalin Kiss</title>
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4/css/tachyons.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link crossorigin='anonymous' href='https://use.fontawesome.com/releases/v5.1.0/css/all.css' integrity='sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt' rel='stylesheet'/>
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/lastfm_style.css"/>
     <script type="text/javascript" src="js/lastfmjs.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/space-text" type="text/css"/>
   
   </head>
 
 <body>
-    <i class="target" id="index"></i>
-    <i class="target" id="projects"></i>
-
-    <div id="pages">
-        <section class="w-100" id="headerinner">
-            <div class="w-100 headerinner">
-                <div class="v-mid dtc tl ma0">
-                    <h1 class="ma0 ttc fw5" id="name">Katalin<br> Kiss</h1>
-                    <div class="subtitles">
-                      <h2 class="fw2">Front-End Web Developer</h2>
-                      <h2 class="fw2">UX/UI Designer</h2>
-                    </div>
-                    <button id="more" class="fw5 f5" href="mailto:thekatezly@gmail.com">Contact Me</button>
+        <header class="w-100" id="header">
+            <nav style="position: fixed; background: rgba(232, 232, 232, 0.85);
+            backdrop-filter: blur(10px); padding: 20px 120px; width: 100%; display: flex; justify-content: space-between; align-items: center; z-index:9999999;"><span style="color: #FF004F; font-size: 32px;">kisskatal<span style="display: inline;
+              -webkit-animation: line 1.4s infinite;
+              animation: line 1.4s infinite;">.</span>in</span> <div style="display: flex; align-items: center;"><ul class="menu"><li><a href="">Dribbble</a></li> <li><a href="">LinkedIn</a></li> <li><a href="">GitHub</a></li></ul> &#8592;</div></nav>
+            <div class="w-100 header">
+              <div style="position: relative; display:flex; align-items: center; justify-content: center;">
+                <div style="position: fixed; transform: rotate(-90deg); min-width:260px;">Contact &#8594; <a href="">thekatezly@gmail.com</a></div>
+              </div>
+              <div class="column2">
+                <div class="subtitles">
+                  <div class="fw2 description">
+                    <span style="color: #FF004F; display: inline;">Hello. I am Katalin Kiss.</span> <br>Front-end web developer turned UI/UX designer whose biggest passion has always been creative visuals.
+                  </div>
                 </div>
-                <a href="#projects" id="projectslink"><span class="text">Projects</span> <span class="img"></span></a>
+              </div>
+              <div style="position: relative;">
+              <div style="position: absolute; transform: rotate(90deg); bottom: 52px;">Projects &#8594;</div>
+            </div>
+            </div>
+          </header>
+        <section class="w-100" id="projects">
+            <div class="main">
+              <div class="project" style="margin-bottom: 96px;">
+                <div class="title">
+                  <div class="">
+                    <h3 style="margin-bottom: 8px;">Last.fm App Redesign &#8594;</h3>
+                    <div class="category" style="margin-bottom: 24px;"><span>UX Design</span> / <span>UI Design</span> / <span>Entertainment</span></div>
+                  </div>
+                  <a class="f6 fw5 link dim ph3 pv2 dib ttu button1" href="/projects/lastfm" style="font-family: 'SpaceTextMedium';">Read case study</a>
+                </div>
+                <div style="position: relative;">
+                  <div style="margin-right: -120px;">
+                    <img src="./img/lastfmindex.png">
+                  </div>
+                </div>
+              </div>
+
+              <div class="project" style="margin-bottom: 96px;">
+                <div class="title">
+                  <div class="">
+                    <h3 style="margin-bottom: 8px;">Mastercard Billpay App &#8594;</h3>
+                    <div class="category" style="margin-bottom: 24px;"><span>UI Design</span> / <span>Financial</span></div>
+                  </div>
+                  <a class="f6 fw5 link dim ph3 pv2 dib ttu button1" href="/projects/lastfm" style="font-family: 'SpaceTextMedium';">Read case study</a>
+                </div>
+                <div style="position: relative;">
+                  <div style="margin-right: -120px;">
+                    <img src="./img/billpayindex.png">
+                  </div>
+                </div>
+              </div>
+
+              <div class="project" style="margin-bottom: 96px;">
+                <div class="title">
+                  <div class="">
+                    <h3 style="margin-bottom: 8px;">Daily UI &#8594;</h3>
+                    <div class="category" style="margin-bottom: 24px;"><span>UI Design</span></div>
+                  </div>
+                  <a class="f6 fw5 link dim ph3 pv2 dib ttu button1" href="/projects/lastfm" style="font-family: 'SpaceTextMedium';">Read case study</a>
+                </div>
+                <div style="position: relative;">
+                  <div style="margin-right: -120px;">
+                    <img src="./img/dailyuiindex.png">
+                  </div>
+                </div>
+              </div>
             </div>
           <div id="footer">
             <div id="social"><a href="https://www.linkedin.com/in/katalin-kiss/" target="_blank"><i class="fab fa-linkedin-in"></i></a>  <a href="https://www.behance.net/kisskatalin" target="_blank"><i class="fab fa-behance"></i></a> <a href="https://dribbble.com/kisskatalin" target="_blank"><i class="fab fa-dribbble"></i></a></div> 
           </div>
-          <div id="credit">Design & Code by Katalin Kiss</div>
-        </section>
-        <section class="w-100" id="projectsinner">
-          <div class="namecontainer">
-            <div class="ma0 ttc fw5 logo" id="name2">Katalin<br> Kiss</div>
-          </div>
-            <div class="main">
-              <div class="pager">
-                <a href="#index"><span class="img"></span></a>
-              </div>
-              <div class="projectscontainer">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <figure onclick="window.open('projects/lastfm','_blank')" class="project" style="background-image:url(./pic/lastfm.png);">
-                      <div class="projectinfo">
-                        <p>UX Design / UI Design</p>
-                        <h2>Last.fm App Redesign</h2>
-                      </div>
-                    </figure>
-                  </div>
-                  <div class="swiper-slide">
-                    <figure onclick="window.open('projects/billpay','_blank')"  class="project" style="background-image:url(./pic/billpay.png);">
-                      <div class="projectinfo">
-                        <p>UI Design</p>
-                        <h2>Mastercard Billpay</h2>
-                      </div>
-                    </figure>
-                  </div>
-                  <div class="swiper-slide">
-                    <figure onclick="window.open('projects/jeans','_blank')"  class="project" style="background-image:url(./pic/jeans.png);">
-                      <div class="projectinfo">
-                        <p>UX Design</p>
-                        <h2>Finding jeans that fit</h2>
-                      </div>
-                    </figure>
-                  </div>
-                  <div class="swiper-slide">
-                    <figure onclick="window.open('https://dribbble.com/kisskatalin/collections/5113042-Daily-UI','_blank')" class="project" style="background-image:url(./pic/dailyui.png);">
-                      <div class="projectinfo">
-                        <p>UI Design</p>
-                        <h2>Daily UI</h2>
-                      </div>
-                    </figure>
-                  </div>
-                  <div class="swiper-slide">
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div id="footer">
-            <div></div>
-              <div id="social"><a href="https://www.linkedin.com/in/katalin-kiss/" target="_blank"><i class="fab fa-linkedin-in"></i></a> <a href="https://www.behance.net/kisskatalin" target="_blank"><i class="fab fa-behance"></i></a> <a href="https://dribbble.com/kisskatalin" target="_blank"><i class="fab fa-dribbble"></i></a></div> 
-          </div>
-          <div id="credit">Design & Code by Katalin Kiss</div>
         </section>
 
         <script>
           const mouseCursor = document.querySelector('.cursor');
           window.addEventListener('mousemove', cursor);
-
           function cursor(e) {
               mouseCursor.style.top = e.clientY + "px";
               mouseCursor.style.left = e.clientX + "px";
           }
         </script>
-
-        <script>
-          var swiper = new Swiper('.projectscontainer', {
-            slidesPerView: 4,
-            centeredSlides: false,
-            breakpoints: {
-            // when window width is >= 320px
-            320: {
-              slidesPerView: 2,
-            },
-            // when window width is >= 480px
-            480: {
-              slidesPerView: 2,
-            },
-            // when window width is >= 640px
-            640: {
-              slidesPerView: 4,
-            }
-            }		    
-          });
-        </script>
-    </div>
 </body>
 </html>

@@ -1,4 +1,5 @@
 body {
+    font-family: 'SpaceTextRegular';
  padding: 0;
  margin: 0;
  border: 0;
@@ -85,20 +86,16 @@ body {
 
 #lastfm .header {
     color: #E8E8E8;
-    background-color: #D60F07;
 }
 
 #lastfm .header .pic .overlay {
-    background: linear-gradient(90deg, #D60F07 0%, rgba(214, 15, 7, 0) 45%);
 }
 
 #billpay .header {
     color: #E8E8E8;
-    background-color: #FF5F00;
 }
 
 #billpay .header .pic .overlay {
-    background: linear-gradient(90deg, #FF5F00 0%, rgba(214, 15, 7, 0) 45%);
 }
 
 #billpay .persona .info .title {
