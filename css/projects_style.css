@@ -1,19 +1,13 @@
 body {
     font-family: 'SpaceTextRegular';
- padding: 0;
- margin: 0;
- border: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
 }
 
 .projects {
     font-weight: 300;
-    color: #515151;
-    background-color: #E8E8E8;
     background-image: none;
-}
-
-.projects_section .container {
-    padding: 4em 120px;
 }
 
 .white  {
@@ -103,18 +97,9 @@ body {
 }
 
 h2 {
-    font-weight: 500;
-    font-size: 26px;
-    line-height: 26px;
-    letter-spacing: -1.7px;
-}
-
-h3 {
     font-weight: 200;
-    font-size: 48px;
-    line-height: 56px;
-    letter-spacing: -1.5px;
-    margin-bottom: 36px;
+    font-size: 40px;
+    line-height: 40px;
 }
 
 h4 {
@@ -215,6 +200,11 @@ h5 {
         letter-spacing: -1.4px;
         margin-bottom: 24px;
         font-weight: 500;
+    }
+
+    .projectsSection {
+        padding: 0 120px;
+        margin-bottom: 96px;
     }
     
 }

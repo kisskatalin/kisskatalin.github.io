@@ -3,66 +3,57 @@
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Last.fm redesign - Katalin Kiss</title>
-    <link crossorigin='anonymous' href='https://use.fontawesome.com/releases/v5.1.0/css/all.css' integrity='sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt' rel='stylesheet'/>
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4/css/tachyons.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="../css/style.css"/>
     <link rel="stylesheet" href="../css/projects_style.css"/>
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/space-text" type="text/css"/>
 
 </head>
 
-<body id="lastfm" class="projects">
-    <nav style="position: fixed; background: rgba(232, 232, 232, 0.85);
+<body>
+    <nav style="box-sizing: border-box; position: fixed; background: rgba(232, 232, 232, 0.85);
     backdrop-filter: blur(10px); padding: 20px 120px; width: 100%; display: flex; justify-content: space-between; align-items: center; z-index:9999999;"><span style="color: #FF004F; font-size: 32px;">kisskatal<span style="display: inline;
       -webkit-animation: line 1.4s infinite;
       animation: line 1.4s infinite;">.</span>in</span> <div style="display: flex; align-items: center;"><ul class="menu"><li><a href="">Dribbble</a></li> <li><a href="">LinkedIn</a></li> <li><a href="">GitHub</a></li></ul> &#8592;</div></nav>
-    <div class="header">
-    
-        <div class="info">
-            <h2>Last.fm App Redesign</h2>
-            <p class="subinfo">Client: <span style="font-weight: 500;">Last.fm</span> • Duration: <span style="font-weight: 500;">May 2021 – August 2021</span> • Tools: <span style="font-weight: 500;">Photoshop, Figma, Miro, paper and pen, Lookback, Zoom, Zeplin</span></p>
+      <div style="height: 96px;"></div>
+    <div class="projects_header" style="display: grid; grid-template-columns: 1fr 1fr; grid-column-gap: 20px; padding: 0 120px; align-items: center;">
+        <div class="info" style="padding-right: 56px;">
+            <div class="category" style="margin-bottom: 24px;"><span>UX Design</span> / <span>UI Design</span> / <span>Entertainment</span></div>
+            <h2 style="margin-bottom: 24px;">Last.fm App Redesign</h2>
+            <p class="subinfo">Duration &#8594; <span style="font-family: 'SpaceTextMedium';">May 2021 – August 2021</span> / Tools &#8594; <span style="font-family: 'SpaceTextMedium';">Photoshop, Figma, Miro, paper and pen, Lookback, Zoom, Zeplin</span></p>
             <p class="subtitle">The project was made for Udacity UX design course.</p>
         </div>
 
-        <div class="pic" style="background-image:url(../pic/lastfm.png);">
-        </div>
-    
+        <img src="../img/lastfmpage.png">
     </div>
 
     <main>
-    <section  class="projects_section">
-        <div class="container">
+    <section class="projectsSectionBig" style="font-size: 24px; line-height: 32px; padding: 0 120px; margin: 8rem 0;">
             Last.fm is a website that provides you to scrobble songs from online music services (e.g. Spotify, Apple Music, etc.) where you listen to music. Last.fm creates recommendations, reports and statistics based on your listening history. You can love your favorite tracks, view statistics of your personal songs, artists, albums.
-        </div>
     </section>
 
-    <section  class="projects_section darkgrey">
-        <div class="container">
+    <section class="projectsSection" style="display: grid; grid-template-columns: 40% 1fr; grid-column-gap: 20px; margin: 8rem 0;">
             <h3>Problem Statement</h3>
+            <div>The Last.fm mobile application has limited features and often navigates the users to their website. The users feel frustrated because they always have to open the browser to log in their accounts to delete their scrobbles, check out the pages of artists, songs, etc.
 
-            <p>The Last.fm mobile application has limited features and often navigates the users to their website.</p>
-
-            <figure class="projects_pic">
                 <img src="../pic/lastfm_1.png">
-                <figcaption>The current Last.fm mobile application</figcaption>
-            </figure>
+            </div>
+    </section>
+
+    <section class="projectsSection" style="display: grid; grid-template-columns: 40% 1fr; grid-column-gap: 20px; margin: 8rem 0;">
+        <h3>Solution</h3>
+        <div>
+            The upgraded design of the Last.fm mobile application has the same features that are only available on the website now. Compared to the website, the redesigned mobile application is easier to use as it contains all the important functions that were missing while the interface got less complex.
         </div>
     </section>
 
-    <section  class="projects_section white">
-        <div class="container">
-            <h3>Solution</h3>
+    <section class="projectsSection" style="display: grid; grid-template-columns: 40% 1fr; grid-column-gap: 20px; margin: 8rem 0;">
+        <h3>Research</h3>
+        <div>
+            I wanted to learn about how the users use the current mobile application and find out how they feel about the difference between it and the website.
 
-            <p>The upgraded design of the Last.fm mobile application has the same features that are only available on the website now. Compared to the website, the redesigned mobile application is easier to use as it contains all the important functions that were missing while the interface got less complex.</p>
-        </div>
-    </section>
-
-    <section  class="projects_section">
-        <div class="container">
-            <h3>Research</h3>
-
-            <p>I wanted to learn about how the users use the current mobile application and find out how they feel about the difference between it and the website.</p>
-
-            <h4>Research questions</h4>
+            <br><br>My research questions with which I was searching for test users:
 
             <ul>
                 <li>Do they use Last.fm frequently?</li>
@@ -70,19 +61,10 @@
                 <li>How do they use the current mobile application?</li>
                 <li>How satisfied are they while using the current mobile application?</li>
             </ul>
-        
-            <h4>User Research Plan</h4>
 
-            <h5>Participants</h5>
+            I found 6 users and interviewed them about what they use and what they like or dislike about the current mobile application.
 
-            <ul>
-                <li>Users who use Last.fm for years</li>
-                <li>Users who have used/are currently using the Last.fm mobile application</li>
-            </ul>
-
-            <span style="font-weight: 400;">6 participants</span> were interviewed about what they use and what they like or dislike about the current mobile application.
-
-            <h5>In-person semi-structured interview questions</h5>
+            <p>My in-person semi-structured interview questions:</p>
 
             <ol>
                 <li>Which services do you use to scrobble music? <span style="font-style: italic;">(Which services are the users comfortable with?)</i></li>
@@ -99,11 +81,7 @@
                 <li>If you were to add something to Last.fm, what will it be? <span style="font-style: italic;">(What are their wishes from the mobile application?)</span></li>
             </ol>
 
-            <p>After the user interviews, I expanded the research by sending out a survey among the Last.fm users.</p>
-            
-            <p><span style="font-weight: 400;">69 participants</span> filled out a survey about what they use on Last.fm.</p>
-
-            <h5>Survey questions</h5>
+            <p>After the user interviews, I expanded the research by sending out a survey. 69 users filled out a survey about what they use on Last.fm.</p>
 
             <ol>
                 <li>How long have you been using Last.fm?</li>
@@ -116,19 +94,17 @@
             </ol>
             
             <p>All the info given helped me to fix and improve the mobile application.</p>
-    </div>
+        </div>
     </section>
 
-    <section  class="projects_section white">
-        <div class="container">
-            <h3>Analysis</h3>
+    <section class="projectsSection" style="display: grid; grid-template-columns: 40% 1fr; grid-column-gap: 20px; margin: 8rem 0;">
+        <h3>Analysis</h3>
+        <div>
+            From the interviews, I created an affinity map with quotes from the users and categorized them.
+            <br><br>
+            <img src="../pic/lastfm/affinitymap.jpg">
 
-            <figure class="projects_pic">
-                <img src="../pic/lastfm/affinitymap.jpg">
-                <figcaption>Affinity map from the user research</figcaption>
-            </figure>
-
-            <h4>Key Findings Based on the Users' Needs</h4>
+            <p>My key findings based on the research:</p>
 
             <ol type="A">
                 <li>The participants prefer the website over the mobile application
@@ -146,11 +122,7 @@
                     </p>
                 </li>
                 <li>The 30% of the participants are Last.fm Pro members</li>
-              </ol> 
 
-            <h4>Key Findings Based on the Users' Behaviors</h4>
-
-            <ol type="A">
                 <li>Just a few of them use the mobile application more often than the website.
                         <p><span style="font-style: italic;">"I use the mobile app on daily basis, the website on weekly basis. The app is just a tap away, so I open it when I'm bored."</span>
                         <br><span style="font-style: italic;">"I use the website because I can get better info on it."</span>
@@ -168,97 +140,61 @@
                 <li>None of the participants communicate with other members by sending messages to them via the inbox or on their profiles</li>
             </ol>
 
-            <h4>Key Findings Based on Other</h4>
+            <p>Another finding that is not fitting into the user's needs, nor behavior, but it's interesting to mention:</p>
 
             <p>Years ago, Last.fm stopped its music service in the middle of the rising of the screaming era and replaced it with YouTube. It's not hard to see why. New competitions entered the market with better deals that Last.fm couldn't longer compete with. Because of this, they focus on data collection and storage based on the user's listening that is a unique feature by them. Since the music listening is provided by a third-party service via Last.fm which is not available everywhere on the website, the user rather uses another product for that and redirects the listening data to Last.fm. While using the other product, the user meets information and doesn't use Last.fm to discover new music. However, Last.fm can easily identify the trend among the users by creating weekly, monthly and yearly reports, even live charts based on the collected data received from several music services. This is very effective, but unfortunately, it's not developed enough on the website and not too many users are interested in it.</p>
         </div>
     </section>
-    <section  class="projects_section white">
-        <div class="container">
-            <h3>Design: Concepts & Sketching</h3>
 
-            <p>Based on the user interviews, I categorized the remarks into themes. Given the survey results as well, I took the opportunities and turned them into possible features. After that, to see how important they are compared to each other, I put them into a coordinate system with X represeting value while Y representing complexity.</p>
-
-            <div class="double_figure">
-                <figure class="projects_pic">
-                    <img src="../pic/lastfm/themesandopportunities.jpg">
-                    <figcaption>Themes and opportunities based on the user interviews</figcaption>
-                </figure>
-
-                <figure class="projects_pic">
-                    <img src="../pic/lastfm/featureprioritization.jpg">
-                    <figcaption>Feature prioritization</figcaption>
-                </figure>
-            </div>
-
-            <h4>Research Finding Applied to the Design</h4>
-
+    <section class="projectsSection" style="display: grid; grid-template-columns: 40% 1fr; grid-column-gap: 20px; margin: 8rem 0;">
+        <h3>Concepts</h3>
+        <div>
+            <p>Based on the user interviews and given the survey results as well, similar to the affinity map, I categorized the remarks into themes to see what opportunities the new app can have. I turned them into possible features.</p>
+            <img src="../pic/lastfm/themesandopportunities.jpg">
+            <p>After that, to see how important they are compared to each other, I put them into a coordinate system with X represeting value while Y representing complexity.</p>
+            <img src="../pic/lastfm/featureprioritization.jpg">
+            <p>By this graphic, it was easy to see which features are worth dealing with.</p>
             <ul>
                 <li>Since the participants totally skip the index page with the recommendations on the website, the new index page is their scrobbles.</li>
                 <li>The users can edit their scrobbles. <span style="font-style: italic;">(With high value and low complexity, it's the most important feature right now.)</span></li>
                 <li>Recommendations are moved to another page. <span style="font-style: italic;">(With low value and low complexity, it's the least necessary feature right now.)</span></li>
                 <li>The message function is entirely removed.</li>
             </ul>
-
             <p>In the middle of the coordinate system, there is a feature which is new and we don't know how hard it would be implemented.</p>
-
-            <h4>Sketch</h4>
-
-            <p>Based on findings, I drew up my ideas on paper. First of all, I sketched eight ideas that first came to my mind. These were only components or a small part of my ideal application. Then I sketched a more detailed version which led me into create the low-fidelity wireframe.</p>
-
-            <div class="double_figure">
-                <figure class="projects_pic">
-                    <img src="../pic/lastfm/sketch_1.png">
-                    <figcaption>Crazy 8</figcaption>
-                </figure>
-
-                <figure class="projects_pic">
-                    <img src="../pic/lastfm/sketch_2.jpg">
-                    <figcaption>Detailed sketch</figcaption>
-                </figure>
-            </div>
-
-            <h4>Low-fidelity wireframe</h4>
-
-            <div class="projects_pic projects_pic2">
-                <figure class="projects_pic">
-                    <img src="../pic/lastfm/wireframe.png">
-                    <figcaption>Low-fidelity wireframe</figcaption>
-                </figure>
-            </div>
         </div>
     </section>
 
-    <section  class="projects_section white">
-        <div class="container">
-            <h3>Design System</h3>
+    <section class="projectsSection" style="display: grid; grid-template-columns: 40% 1fr; grid-column-gap: 20px; margin: 8rem 0;">
+        <h3>Sketch & Low-fidelity wireframe</h3>
+        <div>
+            <p>Based on findings, I drew up my ideas on paper. First of all, I sketched eight ideas that first came to my mind. These were only components or a small part of my ideal application. Then I sketched a more detailed version which led me into create the low-fidelity wireframe.</p>
 
-            <h4>Style Guide</h4>
-    
-            <p>Nomenclatur was chosen for the font which fits the logo well. Its angular, low-key geometic shape is perfect for data analysis.</p>
-
-            <p>The primary color is <span style="font-weight: bold; color: #D60F07;">Rocco Corsa</span> (#D60F07) which is the brand color of Last.fm. Its bright tone was offset by neutral colors as secondary colors. <span style="font-weight: bold; color: #282828;">Eerie Black</span> (#282828) was used for headings and the main content and its lighter shades for details and smaller texts.</p>
-
-            <p>Icon libraries from Font Awesome and Flaticon were used in the design.</p>
-
-            <div class="projects_pic projects_pic3">
-                <figure class="projects_pic">
-                    <img src="../pic/lastfm/styleguide.png">
-                    <figcaption>Typography, Colors, Icons and Logo</figcaption>
-                </figure>
+            <div style="display: grid; grid-template-columns:repeat(2, 1fr); grid-column-gap: 12px;">
+                <img src="../pic/lastfm/sketch_1.png"> <img src="../pic/lastfm/sketch_2.jpg">
             </div>
 
-            <h4>Pattern Library Sheet</h4>
+            <img src="../pic/lastfm/lofi.png">
+        </div>
+    </section>
 
-            <p>The minimal rounded corners give a little playfulness to the design and fits the unique a letter in the logo, but overall, I tried to make the interface simple for easy browsing.</p>
+    <section class="projectsSection" style="display: grid; grid-template-columns: 40% 1fr; grid-column-gap: 20px; margin: 8rem 0;">
+        <h3>Design System</h3>
+        <div>
+            <img src="../pic/lastfm/lastfmstyle.png">
+        </div>
+    </section>
 
-            <div class="projects_pic projects_pic3">
-                <figure class="projects_pic">
-                    <img src="../pic/lastfm/patternlibrarysheet.png">
-                    <figcaption>Buttons, Inputs, Icons, Links and Drop Down</figcaption>
-                </figure>
-            </div>
-            
+    <section class="projectsSection" style="display: grid; grid-template-columns: 40% 1fr; grid-column-gap: 20px; margin: 8rem 0;">
+        <h3>High-fidelity wireframe</h3>
+        <div>
+            After 
+        </div>
+    </section>
+
+    <section class="projectsSection" style="display: grid; grid-template-columns: 40% 1fr; grid-column-gap: 20px; margin: 8rem 0;">
+        <h3>Impact overview</h3>
+        <div>
+            <img src="../pic/lastfm/lastfmstyle.png">
         </div>
     </section>
 
