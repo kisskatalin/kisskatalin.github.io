@@ -1,7 +1,7 @@
 body {
     font-size: 16px;
     line-height: 24px;
-    font-family: 'SpaceTextRegular';
+    font-family: 'SpaceTextRegular', sans-serif;
     color: #2f2f2f;
     background-color: #e8e8e8;
     overflow-x: hidden;
