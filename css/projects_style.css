@@ -175,7 +175,7 @@ h5 {
 @media screen and (min-width: 60em) {
 
     .projectsSection {
-        padding: 0 120px;
+        padding: 0 40px 0 120px;
         margin-bottom: 96px;
     }
     
