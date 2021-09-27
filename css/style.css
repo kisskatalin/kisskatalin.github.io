@@ -1,6 +1,6 @@
 body {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 32px;
     font-family: 'SpaceTextRegular', sans-serif;
     color: #2f2f2f;
     background-color: #e8e8e8;
@@ -9,10 +9,6 @@ body {
 
 h2, h3, h4, h5, p, figure {
     margin: 0;
-}
-
-p {
-    margin-top: 12px;
 }
 
 ::-webkit-scrollbar {
@@ -329,8 +325,8 @@ h3 {
     }
 
     .header h2 {
-        font-size: 28px;
-        line-height: 40px;
+        font-size: 36px;
+        line-height: 42px;
     }
 
     .interested h1 {
