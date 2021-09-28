@@ -27,14 +27,6 @@ h2, h3, h4, h5, p, figure {
     background: #acacac;
 }
 
-h2  {
-    font-family: 'SpaceTextRegular', sans-serif;
-    font-size: 56px;
-    line-height: 66px;
-    margin: 0;
-    font-weight: 500;
-}
-
 #button1 {
     display: inline-block;
     font-family: 'SpaceTextMedium', sans-serif;
@@ -102,6 +94,23 @@ h1 {
     margin: 20px 0;
 }
 
+
+h2  {
+    font-family: 'SpaceTextRegular', sans-serif;
+    font-size: 56px;
+    line-height: 68px;
+    margin: 0;
+    font-weight: 500;
+}
+
+
+h3  {
+    font-weight: 200;
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 40px;
+}
+
 .main .project {
     display: grid;
     grid-template-columns: 40% 1fr;
@@ -113,12 +122,6 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-}
-
-h3 {
-    font-weight: 200;
-    font-size: 36px;
-    line-height: 40px;
 }
 
 .category span {
