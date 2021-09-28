@@ -182,48 +182,6 @@ h3  {
     padding: 16px;
 }
 
-#footer #social {
-    display: none;
-}
-
-#footer2 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    bottom: 0;
-    width: 100%;
-    padding: 32px 128px;
-}
-
-#footer2 .listening {
-    display: none;
-}
-
-#credit {
-    display: none;
-}
-
-#social {
-    font-size: 16px;
-}
-
-#social a {
-    color: #E8E8E8;
-    margin-right: 28px;
-}
-
-#social a:last-child {
-    margin-right: 0;
-}
-
-#social .fab {
-    padding: 4px;
-}
-
-#social a:hover {
-    color: rgba(227, 164, 227, 1);
-}
-
 .listening {
     padding: 0;
 }
