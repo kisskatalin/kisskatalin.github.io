@@ -139,8 +139,8 @@ h1 {
 }
 
 h2 {
-    font-size: 40px;
-    line-height: 52px;
+    font-size: 36px;
+    line-height: 48px;
     margin: 0;
     font-weight: 500;
 }
@@ -163,8 +163,7 @@ h3 {
 }
 
 .contact {
-    font-size: 16px;
-    line-height: 16px;
+    display: none;
 }
 
 .headlineContainer {
@@ -177,7 +176,7 @@ h3 {
 }
 
 .headline h2  {
-    margin-bottom: 32px;
+    margin: 32px 0;
 }
 
 .headlineHighlight {
@@ -424,6 +423,7 @@ main .project .text {
     }
     
     .contact {
+        display: inline-block;
         position: fixed;
         transform: rotate(-90deg);
         font-size: 16px;
@@ -442,7 +442,7 @@ main .project .text {
     }
 
     .headline h2  {
-        margin-bottom: 0;
+        margin: 0;
     }
     
     .headlineHighlight {
