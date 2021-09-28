@@ -1,6 +1,6 @@
 body {
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 16px;
+    line-height: 28px;
     font-family: 'SpaceTextRegular', sans-serif;
     color: #2f2f2f;
     background-color: #e8e8e8;
@@ -147,9 +147,9 @@ h2 {
 
 h3 {
     font-weight: 200;
-    font-size: 36px;
-    line-height: 40px;
-    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 20px;
 }
 
 .subtitle {
@@ -184,6 +184,11 @@ h3 {
     color: #FF004F;
 }
 
+.headlineHighlight2 {
+    font-size: 28px;
+    line-height: 28px;
+}
+
 .nextSectionContainer {
     display: none;
 }
@@ -194,7 +199,7 @@ h3 {
 
 main  {
     width: 100%;
-    margin-top: 40px;
+    margin-top: 64px;
     padding: 12px;
 }
 
@@ -210,10 +215,16 @@ main .project .text {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    order: 2;
+}
+
+main .project .image {
+    margin-bottom: 20px;
+    order: 1;
 }
 
 .category  {
-    margin-bottom: 24px;
+    margin-bottom: 12px;
 }
 
 .category span {
@@ -444,10 +455,10 @@ main .project .text {
     .headline h2  {
         margin: 0;
     }
-    
-    .headlineHighlight {
-        display: inline;
-        color: #FF004F;
+
+    .headlineHighlight2 {
+        font-size: 56px;
+        line-height: 68px;
     }
     
     .nextSectionContainer {
@@ -483,10 +494,13 @@ main .project .text {
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+        order: 1;
     }
     
     main .project .image {
+        margin-top: 0;
         margin-right: -120px;
+        order: 2;
     }
     
     .category  {
