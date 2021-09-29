@@ -1,6 +1,6 @@
 body {
     font-size: 16px;
-    line-height: 28px;
+    line-height: 26px;
     font-family: 'SpaceTextRegular', sans-serif;
     color: #2f2f2f;
     background-color: #e8e8e8;
@@ -129,6 +129,10 @@ nav .headlineLink:hover {
     animation: line 1.4s infinite;
 }
 
+.headline h2  {
+    margin-bottom: 20px;
+}
+
 @-webkit-keyframes line {
     0%, 100% {
         opacity: 0;
@@ -182,6 +186,10 @@ h3 {
     display: none;
 }
 
+.headlineContainer  {
+    margin: 32px 0;
+}
+
 .headlineContainer {
     display: flex;
     align-items: center;
@@ -189,10 +197,6 @@ h3 {
 
 .headline {
     position: relative;
-}
-
-.headline h2  {
-    margin: 32px 0;
 }
 
 .headlineHighlight {
@@ -449,6 +453,10 @@ footer .subtitle .arrow {
     .navPlaceholder {
         display: none;
     }
+
+    .headlineContainer  {
+        margin: 0;
+    }
     
     .headlineLink {
         text-decoration: none;
@@ -458,6 +466,10 @@ footer .subtitle .arrow {
         display: inline;
         -webkit-animation: line 1.4s infinite;
         animation: line 1.4s infinite;
+    }
+
+    .headline h2  {
+        margin-bottom: 0;
     }
     
     h1 {

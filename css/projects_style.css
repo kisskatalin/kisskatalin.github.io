@@ -3,108 +3,47 @@
     background-image: none;
 }
 
-.white  {
-    background-color: #ffffff;
+.subinfo  {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 8px;
 }
 
-.lightgrey  {
-    background-color: #d6d6d6;
-}
-
-.darkgrey {
-    color: #E8E8E8;
-    background-color:#515151;
-}
-
-.projects_pic {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.projects_pic img {
-    width: 100%;
-    height: auto;
-    max-width: 800px;
-}
-
-.projects_pic2 img {
-    max-width: 100%;
-}
-
-.projects_pic3 img {
-    max-width: 75%;
-}
-
-.projects_pic figcaption {
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin-top: 16px;
-}
-
-.header .subinfo  {
-    position: relative;
-}
-
-.header .subinfo  {
+.subtitle  {
     font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 1px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
     text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 12px;
+    opacity: 0.75;
+    margin: 20px 0;
 }
 
-.header .subtitle  {
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-.header .pic .overlay {
-    position: absolute;
-    width: 100%;
-    height: 400px;
-}
-
-#lastfm .header {
-    color: #E8E8E8;
-}
-
-#lastfm .header .pic .overlay {
-}
-
-#billpay .header {
-    color: #E8E8E8;
-}
-
-#billpay .header .pic .overlay {
-}
-
-#billpay .persona .info .title {
-    color: #FF5F00;
-}
-
-h4 {
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 32px;
-    letter-spacing: -1px;
-    margin-top: 32px;
-    margin-bottom: 12px;
-}
-
-h5 {
-    font-weight: 300;
+.projectsSectionHighlight {
     font-size: 20px;
+    line-height: 30px;
+}
+
+.projectsSectionSummary {
+    font-size: 18px;
     line-height: 28px;
-    letter-spacing: -1px;
-    margin: 16px 0;
+    margin-bottom: 24px;
+} 
+
+.projectsSectionText {
+    margin-bottom: 24px;
+} 
+
+.projectsSection {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+    margin: 96px 0 72px 0;
+}
+
+.projectsSection figure {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 24px;
 }
 
 .double_figure {
@@ -147,6 +86,10 @@ h5 {
     border-radius: 50%;
 }
 
+.headlineProjects .info  {
+    margin-bottom: 40px;
+}
+
 /*
     MEDIUM
 */
@@ -161,10 +104,79 @@ h5 {
 */
 
 @media screen and (min-width: 60em) {
+    .headline  {
+        padding-right: 0;
+    }
 
-    .projectsSection {
-        padding: 0 40px 0 120px;
-        margin-bottom: 96px;
+    .subtitle {
+        margin-top: 32px;
+        margin-bottom: 0;
+    }
+
+    .nextSectionContainer {
+        display: inline-block;
+        position: relative;
     }
     
+    .nextSection {
+        display: inline-block;
+        font-size: 16px;
+        line-height: 16px;
+        position: absolute;
+        transform: rotate(90deg);
+        bottom: 67px;
+    }
+
+    .projectsSection {
+        display: grid;
+        grid-template-columns: 40% 1fr;
+        grid-column-gap: 20px;
+        padding: 0 40px 0 0px;
+        margin: 96px 0;
+    }
+
+    .projectsSection figure {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 24px;
+    }
+
+    .projectsSectionHighlight {
+        font-size: 24px;
+        line-height: 34px;
+        padding: 0 40px 0 0;
+    }
+
+    .projectsSectionSummary {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 24px;
+    } 
+
+    .projectsSectionText {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 24px;
+    } 
+
+    .headlineProjects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 56px;
+        align-items: center;
+    } 
+
+    .headlineProjects h2 {
+        margin: 40px 0;
+    } 
+
+    .doubleImage {
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        grid-column-gap: 12px;
+    } 
+
+    .headlineProjects .info  {
+        margin-bottom: 0;
+    }
 }
