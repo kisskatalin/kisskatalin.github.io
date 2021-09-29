@@ -615,7 +615,7 @@ footer .subtitle .arrow {
         grid-template-columns: 1fr 5fr;
         grid-column-gap: 12px;
         align-items: center;
-        margin: 40px 0;
+        margin: 24px 0;
     }
 
     #social {
