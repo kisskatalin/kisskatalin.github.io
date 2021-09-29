@@ -18,6 +18,14 @@
     margin: 20px 0;
 }
 
+.textBold {
+    font-family: 'SpaceTextBold', sans-serif;
+}
+
+.textMedium {
+    font-family: 'SpaceTextMedium', sans-serif;
+}
+
 .projectsSectionHighlight {
     font-size: 20px;
     line-height: 30px;
