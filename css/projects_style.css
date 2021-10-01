@@ -51,7 +51,16 @@
 .projectsSection figure {
     display: flex;
     align-items: flex-start;
+    flex-direction: column;
     margin-bottom: 24px;
+}
+
+.projectsSection figure figcaption {
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 8px;
 }
 
 .double_figure {
