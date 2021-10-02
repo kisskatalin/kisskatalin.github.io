@@ -77,23 +77,19 @@
     display: grid;
     grid-template-columns: auto 1fr;
     grid-column-gap: 24px;
-    margin: 2em 8em;
-    background: rgb(245, 245, 245);
-    padding: 3em;
+    padding: 0 2em;
 }
 
 .persona .info .title {
     font-weight: 300;
-    font-size: 24px;
-    line-height: 32px;
-    letter-spacing: -1px;
-    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 8px;
 }
 
 .persona .info .text {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 24px;
-    text-transform: uppercase;
 }
 
 .persona .pic img {
