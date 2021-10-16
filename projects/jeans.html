@@ -1,151 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Katalin Kiss</title>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Last.fm redesign - Katalin Kiss</title>
-    <link crossorigin='anonymous' href='https://use.fontawesome.com/releases/v5.1.0/css/all.css' integrity='sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt' rel='stylesheet'/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/space-text" type="text/css"/>
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4/css/tachyons.min.css"/>
     <link rel="stylesheet" href="../css/style.css"/>
     <link rel="stylesheet" href="../css/projects_style.css"/>
-
+    <script type="text/javascript" src="js/lastfmjs.js"></script>
+    <link rel="shortcut icon" type="image/ico" href="../favicon.ico"/>
 </head>
 
-<body id="jeans" class="projects">
+<body id="projects">
+    <nav><a href="https://kisskatal.in" class="headlineLink"><h1>kisskatal<span class="headlineDot">.</span>in</h1></a> <div class="menuContainer"><ul class="menu"><li><a href="https://dribbble.com/kisskatalin" target="_blank">Dribbble</a></li> <li><a href="https://www.linkedin.com/in/katalin-kiss/" target="_blank">LinkedIn</a></li> <li><a href="https://github.com/kisskatalin" target="_blank">GitHub</a></li> <li> <a href="mailto:hello@kisskatal.in">Email</a></li></ul> &#8592;</div></nav>
+    <div class="navPlaceholder"></div>
+            <header>
+                <div class="contactContainer">
+                    <div class="contact">Contact &#8594; <a href="mailto:hello@kisskatal.in">hello@kisskatal.in</a></div>
+                </div>
+                <div class="headlineContainer">
+                    <div class="headlineProjects headlineProjects2">
+                        <div class="info">
+                        <div class="category"><span>UX Design</span> | <span>Website</span> | <span>Feature</span> | <span>E-Commerce</span></div>
+                        <div class="headline">
+                            <h2>Finding Jeans that Fit</h2>
+                        </div>
+                            <p class="subinfo">Duration → <span class="textMedium">August 2021 – October 2021</span></p>
+                            <p class="subinfo">Tools → <span class="textMedium">Figma, paper and pen</span></p>
+                            <p class="subtitle">The project was made for UX Challenge.</p>
+                        </div>
+                            <img src="../img/jeansindex.png">
+                    </div>
+                </div>
+                <div class="nextSectionContainer">
+                </div>
+            </header>
+            <main>
+                <section class="projectsSectionHighlight">
+                    WearJeans is a jeans web store which provides you all the info on the products, including size guides that help you to make decisions on buying jeans.
+                </section>
+            
+                <section class="projectsSection">
+                        <h3>Problem Statement</h3>
+                        <div>
+                            <p class="projectsSectionSummary">Shopping for jeans and other form-fitting apparel online could be time-consuming and frustrating.</p> 
+                            
+                            <p class="projectsSectionText">It's hard to compare between different styles, and it's hard to know for sure how they will fit. It's a disappointing experience when you have to return an item that doesn't fit quite right.</p>
+                        </div>
+                </section>
 
-    <div class="header">
-    
-        <div class="info">
-            <h2>Finding Jeans That Fit</h2>
-            <p class="subinfo">Duration: <span style="font-weight: 500;">August 2021</span> • Tools: <span style="font-weight: 500;">Photoshop, Figma, paper and pen</span></p>
-            <p class="subtitle">The project was made for UX Challenge task.</p>
-        </div>
+                <section class="projectsSection">
+                    <h3>Research</h3>
+                    <div>
+                        <p class="projectsSectionSummary">I wanted to learn about what the customers buy on online fashion stores.</p>
 
-        <div class="pic" style="background-image:url(../pic/lastfm.png);">
-            <div class="overlay"></div>
-        </div>
-    
-    </div>
+                        <p class="projectsSectionText">Is the hypothesis correct that the customers don't like to buy trousers online?</p>
 
-    <main>
-    <section  class="projects_section darkgrey">
-        <div class="container">
-            <h3>Problem Statement</h3>
+                        <p class="projectsSectionText">My <span class="textBold">research questions</span> I was searching for participants with:</p>
 
-            <p>Shopping for jeans and other form-fitting apparel online could be time-consuming and frustrating. It's hard to compare between different styles, and it's hard to know for sure how they will fit. It's a disappointing experience when you have to return an item that doesn't fit quite right. How can you help customers select the style of jeans that they’re looking for in the right size?</p>
-        </div>
-    </section>
+                        <ul class="projectsSectionText">
+                            <li>Do they buy clothes online?</li>
+                            <li>Do they buy jeans online?</li>
+                            <li>How satisfied are they while browsing the selection of jeans?</li>
+                        </ul>
 
-    <section  class="projects_section white">
-        <div class="container">
-            <h3>Solution</h3>
+                        <p class="projectsSectionText">I interviewed 5 users about which type of clothes they buy.</p>
 
-            <p></p>
-        </div>
-    </section>
+                        <p class="projectsSectionText">My in-person semi-structured <span class="textBold">interview questions</span>:</p>
 
-    <section  class="projects_section">
-        <div class="container">
-            <h3>Research</h3>
+                        <ol class="projectsSectionText">
+                            <li>How often do you buy clothes online? <span style="font-style: italic;">(Are they experienced customers?)</i></li>
+                            <li>Do you buy clothes in stores or online more often? <span style="font-style: italic;">(Do they trust in online stores?)</span></li>
+                            <li>When you buy something online, why do you prefer that way? <span style="font-style: italic;">(What motivates them to shop?)</span></li>
+                            <li>What type of clothes do you buy online? <span style="font-style: italic;">(Do they buy jeans?)</span></li>
+                            <li>Where do you buy clothes online? <span style="font-style: italic;">(Which stores are they satisfied with?)</span></li>
+                            <li>Have you ever had a size that wasn't fitting? Did you return it? <span style="font-style: italic;">(Do they use this service?)</span></li>
+                        </ol>
 
-            <p>I wanted to learn about what the customers buy at fashion stores online.</p>
+                        <p class="projectsSectionText">All the info given helped me to create a better customer experience.</p>
 
-            <h4>Research questions</h4>
+                    </div>
+                </section>
 
-            <ul>
-                <li>Do they buy clothes online?</li>
-                <li>Do they buy jeans online?</li>
-                <li>How satisfied are they while browsing the selection of jeans?</li>
-            </ul>
-        
-            <h4>User Research Plan</h4>
+                <section class="projectsSection">
+                    <h3>Analysis</h3>
+                    <div>
+                        <p class="projectsSectionSummary">I got the answers from the interviews, so it was time to analyze them.</p>
 
-            <h5>Participants</h5>
+                        <p class="projectsSectionText"><span class="textBold">Key findings</span> based on the user interviews:</p>
 
-            <ul>
-                <li>Users who buy clothes often but are afraid to buy jeans</li>
-            </ul>
+                        <ol type="A" class="projectsSectionText">
+                            <li><p>None of the participants buy jeans online</p>
+                                    <p>They find it risky.</p>
+                                        <p><span style="font-style: italic;">"It's hard to guess if it fits ot not."</span>
+                                        <br><span style="font-style: italic;">"I buy everything but trousers."</span>
+                                    </p>
+                            </li>
+                                <li>1 out of 5 participants shop more often online than at a store
+                                    <p>
+                                        <span style="font-style: italic;">"The store is far away. I usually find the cloth cheaper online."</span>
+                                        <br><span style="font-style: italic;">"In terms of buying clothes, stores are better."</span>
+                                    </p>
+                            </li>
+            
+                            <li>None of the participants return their non-fitting clothes
+                                    <p>
+                                        <span style="font-style: italic;">"I always order from the same places, so I know my sizes already. If it doesn't fit, I rather sell it."</span>
+                                        <br><span style="font-style: italic;">"If they don't fit, I give them to my friends."</span>
+                                    </p>
+                            </li>
+                        </ol> 
 
-            <span style="font-weight: 400;">5 participants</span> were interviewed about which type of clothes they buy and where.
+                        <p class="projectsSectionText">Before I started designing, I visited three fashion websites to check out what logic and interface they provide when they sale jeans. By reviewing them, it's not hard to see why the users are not confident with buying trousers.</p>
 
-            <h5>In-person semi-structured interview questions</h5>
+                        <figure class="projects_pic projects_pic2">
+                            <img src="../pic/jeans/competition1.png">
+                            <figcaption>AG Jeans</figcaption>
+                        </figure>
 
-            <ol>
-                <li>How often do you buy clothes online? <span style="font-style: italic;">(Are they experienced customers?)</i></li>
-                <li>Do you buy clothes in stores or online more often? <span style="font-style: italic;">(Do they trust in online stores?)</span></li>
-                <li>When you buy something online, why do you prefer that way? <span style="font-style: italic;">(What motivates them to shop?)</span></li>
-                <li>What type of clothes do you buy online? <span style="font-style: italic;">(Do they buy jeans?)</span></li>
-                <li>Where do you buy clothes online? <span style="font-style: italic;">(Which stores are they satisfied with?)</span></li>
-                <li>Have you ever had a size that wasn't good? Did you return it? <span style="font-style: italic;">(Do they use this service?)</span></li>
-            </ol>
+                        <p class="projectsSectionText">AG Jeans displays many photos on their product page which is positive. But we have to scroll down under the photos to read the details. While scrolling down, the left side of the page is fixed which is weird because if we read the details, we can click to change the color of the jeans at the same time, but we don't see the change unless we scroll up to the photos.</p>
 
-            <p>All the info given helped me to create a better customer experience.</p>
-    </div>
-    </section>
+                        <figure class="projects_pic projects_pic2">
+                            <img src="../pic/jeans/competition2.png">
+                            <figcaption>Just Jeans</figcaption>
+                        </figure>
 
-    <section  class="projects_section white">
-        <div class="container">
-            <h3>Analysis</h3>
+                        <p class="projectsSectionText">Just Jeans also uses many photos. But the product description doesn't use measures because they're hidden under a "Size Guide" link where the photos are not shown. Also, the header of the website is too height and takes up more space than it should while the product page feels crowded with many photos, texts and offers.</p>
 
-            <h4>Key Findings</h4>
 
-            <ol type="A">
-                <li><p>None of the participants buy jeans online</p>
-                        <p>They find it risky.</p>
-                            <p><span style="font-style: italic;">"It's hard to guess if it fits ot not."</span>
-                            <br><span style="font-style: italic;">"I buy everything but pants."</span>
-                        </p>
-                </li>
-                    <li>1 out of 5 participants shop more often online than at a store
-                        <p>
-                            <span style="font-style: italic;">"The store is far away. I usually find the cloth cheaper online."</span>
-                            <br><span style="font-style: italic;">"In terms of buying clothes, stores are better."</span>
-                        </p>
-                </li>
+                        <figure class="projects_pic projects_pic2">
+                            <img src="../pic/jeans/competition3.png">
+                            <figcaption>Mother Denim</figcaption>
+                        </figure>
 
-                <li>None of the participants return their non-fitting clothes
-                        <p>
-                            <span style="font-style: italic;">"I always order from the same places, so I know my sizes already. If it doesn't fit, I rather sell it."</span>
-                            <br><span style="font-style: italic;">"If they don't fit, I give them to my friends."</span>
-                        </p>
-                </li>
-            </ol> 
+                        <p class="projectsSectionText"> Mother Denim has the most professional interface of them all. They use a video of the model going around in the jeans that helps the customer to decide. Also, as we scroll down, the info stays fixed which is a very good solution. However, the information could be more detailed. Especially, that we have to open tabs to see the details.</p>
+                    </div>
+                </section>
 
-            <h4>Competitive Analysis</h4>
+                <section class="projectsSection">
+                    <h3>Sketch</h3>
+                    <div>
+                        <p class="projectsSectionSummary">I drew up my ideas on paper.</p>
 
-            <p>Before I started designing, I visited three fashion websites to check out what logic and interface they provide when they sale jeans. By reviewing them, it's not hard to see why the users are not confident about buying pants.</p>
+                        <p class="projectsSectionText">Looking at what the users need and what the competitors do wrong (or even right), I sketched my solution for the high-fidelity prototype.</p>
+            
+                        <figure>
+                            <img src="../pic/jeans/sketch.jpg">
+                        </figure>
 
-            <figure class="projects_pic projects_pic2">
-                <img src="../pic/jeans/competition.png">
-                <figcaption>AG Jeans / Mother Denim / Just Jeans</figcaption>
-            </figure>
+                        <p class="projectsSectionText">My solution is to display the sizes in the photo of the trousers. It gives an easier understanding to the user.</p>
+                    </div>
+                </section>
 
-            <p>AG Jeans displays many photos on their product page which is positive. But we have to scroll down under the photos to read the details.</p>
+                <section class="projectsSection">
+                    <h3>High-Fidelity Wireframe</h3>
+                    <div>
+                        <p class="projectsSectionSummary">After sketching up my ideas, I created the high-fidelity prototype.</p>
+                        <figure>    
+                            <img src="../pic/jeans_2.png">
+                        </figure>
+                        <figure>    
+                            <img src="../pic/jeans_3.png">
+                        </figure>
+                        <figure>    
+                            <img src="../pic/jeans_4.png">
+                        </figure>
+                    </div>
+                </section>
 
-            <p>Mother Denim has the most professional interface of them all. They use a video of the model going around in the jeans that helps on the customer's decision. Also, as we scroll down, the info stays fixed which is a very good solution. However, the information could be more detailed. Especially, that we have to open the tab to see the details which are difficult to interpret.</p>
-        
-            <p>Just Jeans also uses many photos. But the product description doesn't use measures, they hid them under a "Size Guide" link where the photos are not shown.</p>
-        </div>
-    </section>
+                <section class="projectsSection">
+                    <h3>Impact Overview</h3>
+                    <div>
+                        <p class="projectsSectionSummary">I tested the high-fidelity prototype with the same users who said they don't buy trousers online.</p>
+                        
+                        <p class="projectsSectionText">Users welcomed the idea of the detailed information on the jeans. They could complete all the tasks I asked from them, including flipping the view of the jeans to view their back. They thought the interface is spacious, easy to read, it doesn't contain any unnecessary or unwanted text. Seeing my prototype, 5 out of 5 participants would buy jeans online.</p>
+                    </div>
+                </section>
 
-    <section  class="projects_section white">
-        <div class="container">
-            <h3>Design: Concepts & Sketching</h3>
-
-            <h4>Sketch</h4>
-
-            <div class="double_figure">
-                <figure class="projects_pic">
-                    <img src="../pic/jeans/sketch.jpg">
-                    <figcaption>Product page</figcaption>
-                </figure>
-            </div>
-
-            <h4>Low-fidelity wireframe</h4>
-
-        </div>
-    </section>
-
-    </main>
-
+            </main>
 </body>
-
 </html>
