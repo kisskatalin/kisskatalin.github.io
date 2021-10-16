@@ -338,7 +338,7 @@ footer {
 
 #credit {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     padding: 2em 4em;
     font-size: 11px;
     line-height: 11px;
@@ -675,7 +675,6 @@ footer {
     
     #credit {
         display: flex;
-        justify-content: center;
         padding: 2em 4em;
         font-size: 11px;
         line-height: 11px;
