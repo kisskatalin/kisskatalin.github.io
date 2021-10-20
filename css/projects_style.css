@@ -75,13 +75,17 @@
 
 .persona {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr;
     grid-column-gap: 24px;
-    padding: 0 2em;
+    padding: 2em;
+    font-family: 'SpaceTextLight', sans-serif;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    align-items: flex-start;
 }
 
 .persona .info .title {
-    font-weight: 300;
+    font-family: 'SpaceTextRegular', sans-serif;
     font-size: 18px;
     line-height: 26px;
     margin-bottom: 8px;
@@ -90,6 +94,13 @@
 .persona .info .text {
     font-size: 15px;
     line-height: 24px;
+}
+
+.persona .pic {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 12px;
 }
 
 .persona .pic img {
@@ -193,7 +204,15 @@
         grid-column-gap: 12px;
     } 
 
-    .headlineProjects .info  {
+    .headlineProjects .info {
+        margin-bottom: 0;
+    }
+
+    .persona {
+        grid-template-columns: auto 1fr;
+    }
+
+    .persona .pic {
         margin-bottom: 0;
     }
 }
