@@ -94,6 +94,7 @@ header {
     background-color: #e8e8e8;
     width: 100%;
     padding: 0 12px;
+    padding-bottom: 64px;
 }
 
 nav {
@@ -226,7 +227,6 @@ h4 {
 
 main  {
     width: 100%;
-    margin-top: 64px;
     padding: 12px;
 }
 
@@ -246,6 +246,7 @@ main .project .text {
 }
 
 main .project .image {
+    display: block;
     margin-bottom: 20px;
     order: 1;
 }
@@ -273,9 +274,10 @@ main .project .image {
     display: none;
 }
 
-.menu {
+.menu {h
     display: flex;
     align-items: center;
+    padding-left: 6px;
 }
 
 .menu li {
@@ -467,10 +469,11 @@ footer {
         position: relative;
         color: #2f2f2f;
         background-color: #e8e8e8;
-        height: 100vh;
+        height: calc(100vh - 104px);
         width: 100%;
         margin-top: 0;
         padding: 0;
+        padding-bottom: 104px;
     }
     
     nav {
@@ -492,7 +495,7 @@ footer {
     }
 
     .navPlaceholder {
-        display: none;
+        height: 104px;
     }
 
     .headlineContainer  {
@@ -603,7 +606,6 @@ footer {
     
     main {
         width: 100%;
-        margin-top: 40px;
         padding-left: 120px;
     }
 

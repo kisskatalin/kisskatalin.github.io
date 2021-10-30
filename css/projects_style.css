@@ -45,7 +45,7 @@
     display: grid;
     grid-template-columns: 1fr;
     padding: 0;
-    margin: 96px 0 72px 0;
+    margin: 72px 0 48px 0;
 }
 
 .projectsSection figure {
