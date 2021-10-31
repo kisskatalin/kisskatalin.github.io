@@ -264,6 +264,13 @@ main .project .image {
     text-transform: uppercase;
 }
 
+.breadcrumb  {
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    line-height: 24px;
+}
+
 .header .description {
     font-size: 72px;
     line-height: 80px;
