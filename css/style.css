@@ -227,6 +227,8 @@ h4 {
 
 main  {
     width: 100%;
+    padding: 12px;
+    padding-top: 0;
     margin-top: 64px;
 }
 
@@ -269,6 +271,7 @@ main .project .image {
     top: 0;
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 32px;
 }
 
 .header .description {
@@ -614,6 +617,10 @@ footer {
     main {
         width: 100%;
         padding-left: 120px;
+    }
+
+    .breadcrumb  {
+        margin-bottom: 0;
     }
 
     #about main  {
