@@ -54,24 +54,3 @@
 .currentlyListening .albumImage:hover {
     animation-play-state: paused;
 }
-
-.currentlyListening_info .title {
-}
-
-.notListening_info .title {
-
-}
-
-
-@media screen and (min-width: 60em) {
-    .currentlyListening_info .title {
-
-    }
-
-    .currentlyListening_info .title {
-    }
-
-    .notListening_info .title {
-
-    }
-}
