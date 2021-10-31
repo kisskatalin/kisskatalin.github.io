@@ -228,6 +228,7 @@ h4 {
 main  {
     width: 100%;
     padding: 12px;
+    margin-top: 64px;
 }
 
 main .project {
