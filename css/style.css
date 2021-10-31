@@ -281,7 +281,7 @@ main .project .image {
     display: none;
 }
 
-.menu {h
+.menu {
     display: flex;
     align-items: center;
     padding-left: 6px;
