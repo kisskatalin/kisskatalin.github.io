@@ -227,11 +227,6 @@ h4 {
 
 main  {
     width: 100%;
-    padding: 12px;
-}
-
-main #projects {
-    display: block;
     margin-top: 64px;
 }
 
