@@ -199,13 +199,11 @@ h4 {
     display: none;
 }
 
-.headlineContainer  {
-    margin: 0;
-}
-
 .headlineContainer {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .headline {
@@ -581,13 +579,7 @@ footer {
         line-height: 16px;
         min-width: 260px;
     }
-    
-    .headlineContainer {
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        flex-direction: column;
-    }
+
     
     .headline {
         position: relative;
