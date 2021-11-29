@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, p, figure {
     background-color: #FF004F;
  }
 
- #button2  {
+ .button2  {
     display: inline-block;
     font-family: 'SpaceTextMedium', sans-serif;
     color: #2f2f2f;
@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, p, figure {
     transition-duration: 0.4s;
  }
 
- #button2:hover {
+ .button2:hover {
     color: #e8e8e8;
     background-color: #2f2f2f;
  }
@@ -408,46 +408,6 @@ footer {
         font-size: 20px;
         line-height: 32px;
     }
-
-    #button1 {
-        display: inline-block;
-        font-family: 'SpaceTextMedium', sans-serif;
-        color: #FF004F;
-        font-size: 14px;
-        line-height: 14px;
-        letter-spacing: 0.5px;
-        padding: 16px 20px;
-        text-transform: uppercase;
-        border: 1px solid #FF004F;
-        text-decoration: none;
-        -webkit-transition-duration: 0.4s;
-        transition-duration: 0.4s;
-     }
-    
-     #button1:hover {
-        color: #e8e8e8;
-        background-color: #FF004F;
-     }
-    
-     #button2  {
-        display: inline-block;
-        font-family: 'SpaceTextMedium', sans-serif;
-        color: #2f2f2f;
-        font-size: 14px;
-        line-height: 14px;
-        letter-spacing: 0.5px;
-        padding: 16px 20px;
-        text-transform: uppercase;
-        border: 1px solid #2f2f2f;
-        text-decoration: none;
-        -webkit-transition-duration: 0.4s;
-        transition-duration: 0.4s;
-     }
-    
-     #button2:hover {
-        color: #e8e8e8;
-        background-color: #2f2f2f;
-     }
     
      .indexbutton  {
         margin-top: 40px; 
