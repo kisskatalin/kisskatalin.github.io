@@ -480,10 +480,6 @@ footer {
         -webkit-animation: line 1.4s infinite;
         animation: line 1.4s infinite;
     }
-
-    .headline h2  {
-        margin-bottom: 0;
-    }
     
     h1 {
         color: #FF004F;
