@@ -541,6 +541,10 @@ footer {
         padding-right: 420px;
     }
 
+    .headline h2 {
+        margin-bottom: 20px;
+    }
+
     .headlineHighlight2 {
         font-size: 56px;
         line-height: 68px;
