@@ -535,15 +535,10 @@ footer {
         line-height: 16px;
         min-width: 260px;
     }
-
     
     .headline {
         position: relative;
         padding-right: 420px;
-    }
-
-    .headline h2  {
-        margin: 0;
     }
 
     .headlineHighlight2 {
