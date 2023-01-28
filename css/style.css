@@ -212,7 +212,6 @@ h5 {
 }
 
 .headlineHighlight {
-    display: inline;
     color: #FF004F;
 }
 
@@ -572,9 +571,9 @@ footer {
     }
 
     .headlineHighlight2 {
+        display: block;
         font-size: 56px;
         line-height: 68px;
-        margin: 0 0 32px 0;
     }
     
     .nextSectionContainer {
