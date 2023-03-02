@@ -567,7 +567,7 @@ footer {
     }
 
     .headline h2 {
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
 
     .headlineHighlight2 {
@@ -700,10 +700,6 @@ footer {
         bottom: 0;
         right: 0;
         width: 100%;
-    }
-
-    #credit .by {
-       opacity: 0.75;
     }
 
     .gridProjects {
