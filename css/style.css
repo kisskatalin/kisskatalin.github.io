@@ -162,6 +162,7 @@ h2 {
     font-weight: 500;
     font-size: 36px;
     line-height: 48px;
+    margin-bottom: 16px;
 }
 
 h3 {
@@ -189,7 +190,6 @@ h5 {
 .subtitle {
     font-size: 20px;
     line-height: 32px;
-    opacity: 0.5;
 }
 
 .contactContainer {
@@ -258,7 +258,7 @@ main .project .image {
 }
 
 .category  {
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 }
 
 .category span {
@@ -369,6 +369,7 @@ footer {
     line-height: 11px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .projectsSection {
@@ -409,6 +410,14 @@ footer {
     color: #42a949;
     background-color: #d6e3d7;
     padding: 4px;
+}
+
+.menu {
+    display: none;
+}
+
+.contactemail {
+    display: inline-block;
 }
 
 /*
@@ -540,7 +549,6 @@ footer {
     .subtitle {
         font-size: 20px;
         line-height: 32px;
-        opacity: 0.5;
     }
     
     .contactContainer {
@@ -550,6 +558,7 @@ footer {
         justify-content: center;
         height: 100vh;
         width: 120px;
+        z-index: 9999999;
     }
     
     .contact {
@@ -558,7 +567,8 @@ footer {
         transform: rotate(-90deg);
         font-size: 16px;
         line-height: 16px;
-        min-width: 260px;
+        min-width: 220px;
+        z-index: 9999999;
     }
     
     .headline {
@@ -700,6 +710,7 @@ footer {
         bottom: 0;
         right: 0;
         width: 100%;
+        text-align: left;
     }
 
     .gridProjects {
@@ -724,5 +735,9 @@ footer {
         position: absolute;
         margin-left: 10px;
         transform: rotate(0deg);
+    }
+
+    .contactemail {
+        display: none;
     }
 }
