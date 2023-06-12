@@ -1,3 +1,11 @@
+main {
+    width: 100%;
+    padding: 0 12px;
+    margin-top: 16px;
+    border-top: 0;
+    border-left: 0;
+}
+
 .projects {
     font-weight: 300;
     background-image: none;
@@ -46,6 +54,7 @@
     grid-template-columns: 1fr;
     padding: 0;
     margin: 72px 0 48px 0;
+    align-items: start;
 }
 
 .projectsSection figure {
@@ -128,6 +137,12 @@ figcaption {
 */
 
 @media screen and (min-width: 60em) {
+    main {
+        width: 100%;
+        padding-left: 120px;
+        margin-top: 16px;
+    }
+
     .headline  {
         padding-right: 0;
     }
@@ -215,5 +230,10 @@ figcaption {
 
     .persona .pic {
         margin-bottom: 0;
+    }
+
+    h3 {
+        position: sticky;
+        top: 100px;
     }
 }

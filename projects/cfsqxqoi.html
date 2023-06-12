@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Katalin Kiss</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/space-text" type="text/css"/>
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4/css/tachyons.min.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/projects_style.css"/>
+    <link rel="stylesheet" href="../css/pass_style.css"/>
+    <link rel="shortcut icon" type="image/ico" href="../favicon.ico"/>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-211587635-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-211587635-1');
+    </script>
+</head>
+
+<body id="projects">
+    <div class="contactContainer">
+        <div class="contact">Contact → <a href="mailto:hello@kisskatal.in">hello@kisskatal.in</a></div>
+    </div>
+    <nav><a href="https://kisskatal.in" class="headlineLink"><h1>kisskatal<span class="headlineDot">.</span>in</h1></a></nav>
+    <div class="navPlaceholder"></div>
+            <header>
+                <div class="headlineContainer">
+                    <div class="headlineProjects headlineProjects2">
+                        <div class="info">
+                        <div class="breadcrumb"><a href="https://kisskatal.in">Home</a> &#8594; <a href="https://kisskatal.in/#projects">Projects</a> &#8594; <span>Gastro Prof ERP</span></div>
+                        <div class="category"><span>UX Research</span> | <span>UX Design</span> | <span>UI Design</span> | <span>Web App</span>
+                        <span class="company">@Matusz-Vad Zrt.</span></div>
+                        <div class="headline">
+                            <h2>Gastro Prof ERP</h2>
+                        </div>
+                            <p class="subinfo">Tools → <span class="textMedium">Figma, Adobe XD, Microsoft Teams, paper and pen</span></p>
+                            <p class="subinfo">Duration → <span class="textMedium">March 2022 – May 2023</span></p>
+                        </div>
+                            <img src="../img/gastroprofindex.png" alt="Gastro Prof">
+                    </div>
+                </div>
+                <div class="nextSectionContainer">
+                </div>
+            </header>
+            <main>
+                <section class="projectsSectionHighlight">
+                    Gastro Prof is a web-based ERP (Enterprise Resource Planning) system which is used by Matusz-Vad Zrt. to collect, store and manage data from business activities.
+                </section>
+            
+                <section class="projectsSection">
+                    <h3>Goal</h3>
+                    <div>
+                        <p class="projectsSectionSummary">To make the business processes faster by less complicated and more logical interfaces.</p> 
+
+                        <p class="projectsSectionText">My main project at Matusz-Vad Zrt. was to redesign the Java-based ERP system to a web structure. Every department of the company, from warehouse to sales, uses the ERP, so all processes are integrated into one place. <span style="font-family: 'SpaceTextBold', sans-serif;">The company employees are familiar with how the system works functionally</span>, as most of them use it for years every day, so <span style="font-family: 'SpaceTextBold', sans-serif;">I wanted to keep the basics of the system</span> while improving the entire architecture with better user experience. (Jakob's Law)</p>
+                    </div>
+                </section>
+
+                <section class="projectsSection">
+                    <h3>Problem Statement</h3>
+                    <div>
+                        <p class="projectsSectionSummary">The Java-based ERP was functionally confusing, slow in performance and looked very outdated.</p> 
+
+                        <div class="doubleImage">
+                            <figure>
+                                <img src="../pic/gastroprof/oldsystem1.png">
+                            </figure>
+            
+                            <figure>
+                                <img src="../pic/gastroprof/oldsystem2.png">
+                            </figure>
+                        </div>
+                        <figcaption>Old system</figcaption>
+                    </div>
+                </section>
+
+                <section class="projectsSection">
+                    <h3>Research</h3>
+                    <div>
+                        <p class="projectsSectionSummary">I worked with SQL developers, employees, managers and a business analyst.</p>
+
+                        <p class="projectsSectionText">I visited the departments and spent 30+ hours with the employees. Mostly, I worked the night shift at the warehouse in Győr as I started the design with the night warehouse management processes. <span style="font-family: 'SpaceTextBold', sans-serif;">I watched the employees and tried to understand what they do, and how the real-life results get added to the ERP system.</span></p>
+                        
+                        <p class="projectsSectionText">As I kept asking them about the system, the employees complained about the lack of multitasking capability, the difficulty of searching and useless functions. Other problems I noticed were loading slowness, incorrect button and label titles, spelling mistakes, confusing error messages, fonts and colors.</p>
+                        
+                        <p class="projectsSectionText">To get to know the departments better and what the users need, I created flows of the work process, so I could see where the work is very intensive as I was able to match the sub-modules to each point.</p>
+
+                        <figure>
+                            <img src="../pic/gastroprof/flowchart.png">
+
+                            <figcaption>The beginning of the night shift of the warehouse processes</figcaption>
+                        </figure>
+
+                        <p class="projectsSectionText">Too many windows used at once was a critical point.</p>
+                    </div>
+                </section>
+
+                <section class="projectsSection">
+                    <h3>Insight</h3>
+                    <div>
+                        <p class="projectsSectionSummary">Lack of dynamics causes less smooth user flows and results in complications.</p>
+
+                        <p class="projectsSectionText"><span style="font-family: 'SpaceTextBold', sans-serif;">A web application with Angular can be more dynamic than a Java-based static one.</span> There were separate sub-modules based on permission in the old system which meant a certain task could have up to three windows, e.g. waybills had one for view, one for data entry and one for printing. This is very confusing because the users can't be sure which one they need to open.</p>
+                    
+                        <p class="projectsSectionText">Usually, the buttons were still active on the interface when they couldn't have been used, e.g. the <span style="font-style: italic;">Save</span> button remains clickable when none changes are made or the mandatory fields aren't filled out. This doesn't avoid pointless actions which overload the system with error messages and make the user experience inconsistent.</p>
+                    
+                        <p class="projectsSectionText">The design elements needed to be fixed also. The layout wasn't arranged by a grid system, not to mention its design system which was chaotic with disturbingly colorful fields and conceptless key combinations.</p>
+                    </div>
+                </section>
+
+                <section class="projectsSection">
+                    <h3>Design System</h3>
+                    <div>
+                        <p class="projectsSectionSummary">I created a design system with over 70 components.</p>
+
+                        <figure>
+                            <img src="../pic/gastroprof_9.png">
+
+                            <figcaption>A Part of the Design System</figcaption>
+                        </figure>
+                </section>
+
+                <section class="projectsSection">
+                    <h3>High-Fidelity Wireframe</h3>
+                    <div>
+                        <p class="projectsSectionSummary">Some of the 300+ wireframes are highlighted. I led usability testing sessions to see if everything met the criteria.</p>
+
+                        <p class="projectsSectionText">There are 13 main modules and I redesigned over 50 sub-modules (modules within modules).</p>
+
+                        <p class="projectsSectionText"><span style="font-family: 'SpaceTextBold', sans-serif;">I removed all redundancy, merged identical processes to decrease the huge number of sub-modules</span> and created a user-friendly and responsive interface.</p>
+
+                        <p class="projectsSectionText">In the old ERP system, <span style="font-family: 'SpaceTextBold', sans-serif;">search in tables was not clear</span>. Users had to click onto the cell, press <span style="font-style: italic;">F4</span>, press <span style="font-style: italic;">Backspace</span> and write the word between <span style="font-style: italic;">%%</span> and press <span style="font-style: italic;">F8</span> to see the results. In my design, they can do it with one step by typing the words into the search field.</p>
+
+                        <figure>
+                            <img src="../pic/gastroprof/oldsystem3.png">
+
+                            <figcaption>Old system</figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="../pic/gastroprof_1.png">
+
+                            <figcaption>New system (Select and Print Item Labels)</figcaption>
+                        </figure>
+
+                        <p class="projectsSectionText">Tables with long rows are very common in the system which causes problems with the data entry. In the old system, the width of the columns was small, therefore the column titles had to be short. Now, the titles are written correctly, however, I couldn't avoid the huge length of the tables, so users have to scroll horizontally to see the last column. To make it easier, <span style="font-family: 'SpaceTextBold', sans-serif;">clicking the row opens a pop-up window to check out the fields</span>.</p>
+                
+                        <figure>
+                            <img src="../pic/gastroprof/oldsystem4.png">
+
+                            <figcaption>Old system</figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="../pic/gastroprof_2.png">
+
+                            <figcaption>New system</figcaption>
+                        </figure>
+
+                        <p class="projectsSectionText">The yellow input fields were actually dropdowns with pop-up that contained a search input that could be opened with <span style="font-style: italic;">F9</span> on Windows, the combination of <span style="font-style: italic;">fn</span> and <span style="font-style: italic;">F9</span> on Mac. I corrected them by the design standards.</p>
+
+                        <div class="twoColumn">
+
+                        <figure>
+                            <img src="../pic/gastroprof/oldsystem6.png">
+
+                            <figcaption>Old system</figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="../pic/gastroprof_8.png">
+
+                            <figcaption>New system</figcaption>
+                        </figure>
+
+                        </div>
+
+                        <p class="projectsSectionText">It was also desired <span style="font-family: 'SpaceTextBold', sans-serif;">to hide columns from long tables</span>, so the necessary data could be filtered out. It's important when the same sub-modules are used by different departments, but every department needs different data for their work.</p>
+
+                        <figure>
+                            <img src="../pic/gastroprof/oldsystem5.png">
+
+                            <figcaption>Old system</figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="../pic/gastroprof_3.png">
+
+                            <figcaption>New system (Tour Organizer)</figcaption>
+                        </figure>
+
+                        <p class="projectsSectionText">More wireframes:</p>
+
+                        <figure>
+                            <img src="../pic/gastroprof_4.png">
+                            <figcaption>Overlay window</figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="../pic/gastroprof_5.png">
+                            <figcaption>Pop-up window</figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="../pic/gastroprof_6.png">
+                            <figcaption>Switcher with radio button (Retrieval List)</figcaption>
+                        </figure>
+                    </div>
+                </section>
+
+                <section class="projectsSection">
+                    <h3>Impact Overview</h3>
+                    <div>
+                        <p class="projectsSectionSummary">Matusz-Vad Zrt. is one of the most valuable food sales companies with nearly 2,000 types of products from 4 continents and 10,000 active partners in Hungary, with two offices and three warehouses which requires fast and coordinated work between the places.</p>
+                        
+                        <p class="projectsSectionText">That's why <span style="font-family: 'SpaceTextBold', sans-serif;">an integrated ERP system increases efficiency in every way which saves time and money for the company</span>. First of all, the system is on the web now, available from anywhere on any device. Which is very important for senior managers, salespersons and delivery drivers who are usually away from the office.</p>
+                    
+                        <p class="projectsSectionText">Since the modules for production were launched, work processes have become faster thanks to digitalization. Previously, the employees filled out the production logs on paper, but now, all the data can be stored in the ERP system.</p>
+                    
+                        <p class="projectsSectionText">Also, back then, they had to open several windows at the same time and wait 2-3 minutes to complete tasks which meant the server was under load. However, in the new ERP system, <span style="font-family: 'SpaceTextBold', sans-serif;">they can do it in less than 1 minute (faster by 56%)</span> as the user flows have gotten shortened.</p>
+                    
+                        <p class="projectsSectionText">To me, working with the company employees was very effective. It was good to understand what they use which helped me to design the new ERP system and appreciated all the feedback that came from them.</p>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <div id="credit">
+                  <ul class="menu">
+                    <li><a href="https://dribbble.com/kisskatalin" target="_blank">Dribbble</a></li>
+                    <li><a href="https://behance.net/kisskatalin" target="_blank">Behance</a></li>
+                    <li><a href="https://instagram.com/kisskatal.in" target="_blank">Instagram</a></li>
+                    <li><a href="https://linkedin.com/in/katalin-kiss/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/kisskatalin" target="_blank">GitHub</a></li>
+                    <li><a href="mailto:hello@kisskatal.in">Email</a></li></ul>
+                    <div class="by">Designed and coded by Katalin Kiss</div>
+                </div>
+          </footer>
+</body>
+</html>

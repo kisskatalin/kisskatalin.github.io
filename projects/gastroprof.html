@@ -1,12 +1,14 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Katalin Kiss</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow" />
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/space-text" type="text/css"/>
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4/css/tachyons.min.css"/>
     <link rel="stylesheet" href="../css/style.css"/>
     <link rel="stylesheet" href="../css/projects_style.css"/>
+    <link rel="stylesheet" href="../css/pass_style.css"/>
     <link rel="shortcut icon" type="image/ico" href="../favicon.ico"/>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-211587635-1"></script>
     <script>
@@ -16,212 +18,185 @@
 
         gtag('config', 'UA-211587635-1');
     </script>
-</head>
-
-<body id="projects">
-    <div class="contactContainer">
-        <div class="contact">Contact → <a href="mailto:hello@kisskatal.in">hello@kisskatal.in</a></div>
+  </head>
+  <body>
+    <iframe id="contentFrame" frameBorder="0" allowfullscreen></iframe>
+    <div id="dialogWrap">
+        <div id="dialogWrapCell">
+            <div id="mainDialog">
+                <div id="dialogText">This page is password protected.</div>
+                <div id="passArea">
+                    <p id="passwordPrompt">Password</p>
+                    <input id="pass" type="password" name="pass" autofocus>
+                    <div>
+                        <span id="messageWrapper">
+                            <span id="invalidPass" class="error">Sorry, please try again.</span>
+                            <span id="trycatcherror" class="error">Sorry, something went wrong.</span>
+                            <span id="success" class="notifyText">Success!</span>
+                            &nbsp;
+                        </span>
+                        <button id="submitPass" type="button">Submit</button>
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+                <div id="securecontext" class="error">
+                    <p>
+                        Sorry, but password protection only works over a secure connection. Please load this page via HTTPS.
+                    </p>
+                </div>
+                <div id="nocrypto" class="error">
+                    <p>
+                        Your web browser appears to be outdated. Please visit this page using a modern browser.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-    <nav><a href="https://kisskatal.in" class="headlineLink"><h1>kisskatal<span class="headlineDot">.</span>in</h1></a></nav>
-    <div class="navPlaceholder"></div>
-            <header>
-                <div class="headlineContainer">
-                    <div class="headlineProjects headlineProjects2">
-                        <div class="info">
-                        <div class="breadcrumb"><a href="https://kisskatal.in">Home</a> &#8594; <a href="https://kisskatal.in/#projects">Projects</a> &#8594; <span>Gastro Prof</span></div>
-                        <div class="category"><span>UX Design</span> | <span>UI Design</span> | <span>Web App</span> | <span>Management</span>
-                        <span class="company">@Matusz-Vad Zrt.</span></div>
-                        <div class="headline">
-                            <h2>Gastro Prof ERP</h2>
-                        </div>
-                            <p class="subinfo">Tools → <span class="textMedium">Figma, Adobe XD, Microsoft Teams, paper and pen</span></p>
-                        </div>
-                            <img src="../img/gastroprofindex.png" alt="Gastro Prof">
-                    </div>
-                </div>
-                <div class="nextSectionContainer">
-                </div>
-            </header>
-            <main>
-                <section class="projectsSectionHighlight">
-                    Gastro Prof is a web-based ERP (Enterprise Resource Planning) system which is used by Matusz-Vad Zrt. to collect, store and manage data from business activities.
-                </section>
+    <script>
+    (function() {
+
+        var pl = "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";
+        
+        var submitPass = document.getElementById('submitPass');
+        var passEl = document.getElementById('pass');
+        var invalidPassEl = document.getElementById('invalidPass');
+        var trycatcherror = document.getElementById('trycatcherror');
+        var successEl = document.getElementById('success');
+        var contentFrame = document.getElementById('contentFrame');
+        
+        // Sanity checks
+
+        if (pl === "") {
+            submitPass.disabled = true;
+            passEl.disabled = true;
+            alert("This page is meant to be used with the encryption tool. It doesn't work standalone.");
+            return;
+        }
+
+        if (!isSecureContext) {
+            document.querySelector("#passArea").style.display = "none";
+            document.querySelector("#securecontext").style.display = "block";
+            return;
+        }
+
+        if (!crypto.subtle) {
+            document.querySelector("#passArea").style.display = "none";
+            document.querySelector("#nocrypto").style.display = "block";
+            return;
+        }
+        
+        function str2ab(str) {
+            var ustr = atob(str);
+            var buf = new ArrayBuffer(ustr.length);
+            var bufView = new Uint8Array(buf);
+            for (var i=0, strLen=ustr.length; i < strLen; i++) {
+                bufView[i] = ustr.charCodeAt(i);
+            }
+            return bufView;
+        }
+
+        async function deriveKey(salt, password) {
+            const encoder = new TextEncoder()
+            const baseKey = await crypto.subtle.importKey(
+                'raw',
+                encoder.encode(password),
+                'PBKDF2',
+                false,
+                ['deriveKey'],
+            )
+            return await crypto.subtle.deriveKey(
+                { name: 'PBKDF2', salt, iterations: 100000, hash: 'SHA-256' },
+                baseKey,
+                { name: 'AES-GCM', length: 256 },
+                true,
+                ['decrypt'],
+            )
+        }
+        
+        async function doSubmit(evt) {
+            submitPass.disabled = true;
+            passEl.disabled = true;
+
+            let iv, ciphertext, key;
             
-                <section class="projectsSection">
-                    <h3>Goal</h3>
-                    <div>
-                        <p class="projectsSectionSummary">To make the business processes faster by less complicated and more logical interfaces.</p> 
+            try {
+                var unencodedPl = str2ab(pl);
 
-                        <p class="projectsSectionText">My main project at Matusz-Vad Zrt. was to redesign the Java-based ERP system to a web structure. Every department of the company, from warehouse to sales, uses the ERP, so all processes are integrated into one place. <span style="font-family: 'SpaceTextBold', sans-serif;">The company employees are familiar with how the system works functionally</span>, as most of them use it for years every day, so <span style="font-family: 'SpaceTextBold', sans-serif;">I wanted to keep the basics of the system</span> while improving the entire architecture with better user experience. (Jakob's Law)</p>
-                    </div>
-                </section>
+                const salt = unencodedPl.slice(0, 32)
+                iv = unencodedPl.slice(32, 32 + 16)
+                ciphertext = unencodedPl.slice(32 + 16)
 
-                <section class="projectsSection">
-                    <h3>Problem Statement</h3>
-                    <div>
-                        <p class="projectsSectionSummary">The Java-based ERP was functionally confusing, slow in performance and looked very outdated.</p> 
+                key = await deriveKey(salt, passEl.value);
+            } catch (e) {
+                trycatcherror.style.display = "inline";
+                console.error(e);
+                return;
+            }
 
-                        <div class="doubleImage">
-                            <figure>
-                                <img src="../pic/gastroprof/oldsystem1.png">
-                            </figure>
-            
-                            <figure>
-                                <img src="../pic/gastroprof/oldsystem2.png">
-                            </figure>
-                        </div>
-                        <figcaption>Old system</figcaption>
-                    </div>
-                </section>
+            try {
+                const decryptedArray = new Uint8Array(
+                    await crypto.subtle.decrypt({ name: 'AES-GCM', iv }, key, ciphertext)
+                );
 
-                <section class="projectsSection">
-                    <h3>Research</h3>
-                    <div>
-                        <p class="projectsSectionSummary">I worked with SQL developers, employees and managers.</p>
+                let decrypted = new TextDecoder().decode(decryptedArray);
 
-                        <p class="projectsSectionText">I visited the departments and spent 30+ hours with the employees. Mostly, I worked the night shift at the warehouse in Győr as I started the design with the night warehouse management processes. <span style="font-family: 'SpaceTextBold', sans-serif;">I watched the employees and tried to understand what they do, and how the real-life results get added to the ERP system.</span></p>
-                        
-                        <p class="projectsSectionText">As I kept asking them about the system, the employees complained about the lack of multitasking capability, the difficulty of search and useless functions. Other problems I noticed were loading slowness, incorrect button and label titles, spelling mistakes, confusing error messages, fonts and colors.</p>
-                        
-                        <p class="projectsSectionText">To get to know the departments better and what the users need, I created flows of the work process, so I could see where the work is very intensive as I was able to match the sub-modules to each point.</p>
+                if (decrypted === "") throw "No data returned";
 
-                        <figure>
-                            <img src="../pic/gastroprof/flowchart.png">
-
-                            <figcaption>The beginning of the night shift of the warehouse processes</figcaption>
-                        </figure>
-
-                        <p class="projectsSectionText">Too many windows used at once was a critical point.</p>
-                    </div>
-                </section>
-
-                <section class="projectsSection">
-                    <h3>Insight</h3>
-                    <div>
-                        <p class="projectsSectionSummary">Lack of dynamics causes less smooth user flows and results in complications.</p>
-
-                        <p class="projectsSectionText"><span style="font-family: 'SpaceTextBold', sans-serif;">A web application with Angular can be more dynamic than a Java-based static one.</span> There were separate sub-modules based on permission in the old system which meant a certain task could have up to three windows, e.g. waybills had one for view, one for data entry and one for printing. This is very confusing because the users can't be sure which one they need to open.</p>
-                    
-                        <p class="projectsSectionText">Usually, the buttons were still active on the interface when they couldn't have been used, e.g. the <span style="font-style: italic;">Save</span> button remains clickable when none changes are made or the mandatory fields aren't filled out. This doesn't avoid pointless actions which overload the system with error messages and make the user experience inconsistent.</p>
-                    
-                        <p class="projectsSectionText">The design elements needed to be fixed also. The layout wasn't arranged by a grid system, not to mention its design system which was chaotic with disturbingly colorful fields and conceptless key combinations.</p>
-                    </div>
-                </section>
-
-                <section class="projectsSection">
-                    <h3>High-Fidelity Wireframe</h3>
-                    <div>
-                        <p class="projectsSectionSummary">Some of over 200 wireframes that I made are highlighted. I led 5 usability testing sessions to see if everything met the criteria. I created a design system with over 70 components.</p>
-
-                        <p class="projectsSectionText">There are 13 main modules and I redesigned over 50 sub-modules (modules within modules).</p>
-
-                        <p class="projectsSectionText"><span style="font-family: 'SpaceTextBold', sans-serif;">I removed all redundancy, merged identical processes to decrease the huge number of sub-modules</span> and created a user-friendly and responsive interface.</p>
-
-                        <p class="projectsSectionText">In the old ERP system, <span style="font-family: 'SpaceTextBold', sans-serif;">searching in tables was not clear</span>. Users had to click onto the cell, press <span style="font-style: italic;">F4</span>, press <span style="font-style: italic;">Backspace</span> and write the word between <span style="font-style: italic;">%%</span> and press <span style="font-style: italic;">F8</span> to see the results. In my design, they can do it with one step by typing the words into the search field.</p>
-
-                        <figure>
-                            <img src="../pic/gastroprof/oldsystem3.png">
-
-                            <figcaption>Old system</figcaption>
-                        </figure>
-
-                        <figure>
-                            <img src="../pic/gastroprof_1.png">
-
-                            <figcaption>New system (Select and Print Item Labels)</figcaption>
-                        </figure>
-
-                        <p class="projectsSectionText">Tables with long rows are very common in the system which causes problems with the data entry. In the old system, the width of the columns was small, therefore the column titles had to be short. Now, the titles are written correctly, however, I couldn't avoid the huge length of the tables, so users have to scroll horizontally to see the last column. To make it easier, <span style="font-family: 'SpaceTextBold', sans-serif;">clicking the row opens a pop-up window to check out the fields</span>.</p>
+                const basestr = '<base href="." target="_top">';
+                const anchorfixstr = `
+                    <script>
+                        Array.from(document.links).forEach((anchor) => {
+                            const href = anchor.getAttribute("href");
+                            if (href.startsWith("#")) {
+                                anchor.addEventListener("click", function(e) {
+                                    e.preventDefault();
+                                    const targetId = this.getAttribute("href").substring(1);
+                                    const targetEl = document.getElementById(targetId);
+                                    targetEl.scrollIntoView();
+                                });
+                            }
+                        });
+                    <\/script>
+                `;
                 
-                        <figure>
-                            <img src="../pic/gastroprof/oldsystem4.png">
+                // Set default iframe link targets to _top so all links break out of the iframe
+                if (decrypted.includes("<head>")) decrypted = decrypted.replace("<head>", "<head>" + basestr);
+                else if (decrypted.includes("<!DOCTYPE html>")) decrypted = decrypted.replace("<!DOCTYPE html>", "<!DOCTYPE html>" + basestr);
+                else decrypted = basestr + decrypted;
 
-                            <figcaption>Old system</figcaption>
-                        </figure>
-
-                        <figure>
-                            <img src="../pic/gastroprof_2.png">
-
-                            <figcaption>New system</figcaption>
-                        </figure>
-
-                        <p class="projectsSectionText">The yellow input fields were actually dropdowns with pop-up that contained a search input that could be opened with <span style="font-style: italic;">F9</span> on Windows, the combination of <span style="font-style: italic;">fn</span> and <span style="font-style: italic;">F9</span> on Mac. I corrected them by the design standards.</p>
-
-                        <div class="twoColumn">
-
-                        <figure>
-                            <img src="../pic/gastroprof/oldsystem6.png">
-
-                            <figcaption>Old system</figcaption>
-                        </figure>
-
-                        <figure>
-                            <img src="../pic/gastroprof_8.png">
-
-                            <figcaption>New system</figcaption>
-                        </figure>
-
-                        </div>
-
-                        <p class="projectsSectionText">It was also desired <span style="font-family: 'SpaceTextBold', sans-serif;">to hide columns from long tables</span>, so the necessary data could be filtered out. It's important when the same sub-modules are used by different departments, but every department needs different data for their work.</p>
-
-                        <figure>
-                            <img src="../pic/gastroprof/oldsystem5.png">
-
-                            <figcaption>Old system</figcaption>
-                        </figure>
-
-                        <figure>
-                            <img src="../pic/gastroprof_3.png">
-
-                            <figcaption>New system (Tour Organizer)</figcaption>
-                        </figure>
-
-                        <p class="projectsSectionText">More wireframes:</p>
-
-                        <figure>
-                            <img src="../pic/gastroprof_4.png">
-                            <figcaption>Overlay window</figcaption>
-                        </figure>
-
-                        <figure>
-                            <img src="../pic/gastroprof_5.png">
-                            <figcaption>Pop-up window</figcaption>
-                        </figure>
-
-                        <figure>
-                            <img src="../pic/gastroprof_6.png">
-                            <figcaption>Switcher with radio button (Retrieval List)</figcaption>
-                        </figure>
-                    </div>
-                </section>
-
-                <section class="projectsSection">
-                    <h3>Impact Overview</h3>
-                    <div>
-                        <p class="projectsSectionSummary">Matusz-Vad Zrt. is one of the most valuable food sales companies with nearly 2,000 types of products from 4 continents and 10,000 active partners in Hungary, with two offices and three warehouses which requires fast and coordinated work between the places.</p>
-                        
-                        <p class="projectsSectionText">That's why <span style="font-family: 'SpaceTextBold', sans-serif;">an integrated ERP system increases efficiency in every way which saves time and money for the company</span>. First of all, the system is on the web now, available from anywhere on any device. Which is very important for senior managers, salespersons and delivery drivers who are usually away from the office.</p>
-                    
-                        <p class="projectsSectionText">Since the modules for production were launched, work processes have become faster thanks to digitization. Previously, the employees filled out the production logs on paper, but now, all the data can be stored in the ERP system.</p>
-                    
-                        <p class="projectsSectionText">Also, back then, they had to open several windows at the same time and wait 2-3 minutes to complete tasks which meant the server was under load. However, in the new ERP system, <span style="font-family: 'SpaceTextBold', sans-serif;">they can do it in less than 1 minute (faster by 56%)</span> as the user flows have gotten shortened.</p>
-                    
-                        <p class="projectsSectionText">To me, working with the company employees was very effective. It was good to understand what they use which helped me to design the new ERP system and appreciated all the feedback that came from them.</p>
-                    </div>
-                </section>
-            </main>
-            <footer>
-                <div id="credit">
-                  <ul class="menu">
-                    <li><a href="https://dribbble.com/kisskatalin" target="_blank">Dribbble</a></li>
-                    <li><a href="https://behance.net/kisskatalin" target="_blank">Behance</a></li>
-                    <li><a href="https://instagram.com/kisskatal.in" target="_blank">Instagram</a></li>
-                    <li><a href="https://linkedin.com/in/katalin-kiss/" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://github.com/kisskatalin" target="_blank">GitHub</a></li>
-                    <li><a href="mailto:hello@kisskatal.in">Email</a></li></ul>
-                    <div class="by">Designed and coded by Katalin Kiss</div>
-                </div>
-          </footer>
-</body>
+                // Fix fragment links
+                if (decrypted.includes("</body>")) decrypted = decrypted.replace("</body>", anchorfixstr + '</body>');
+                else if (decrypted.includes("</html>")) decrypted = decrypted.replace("</html>", anchorfixstr + '</html>');
+                else decrypted = decrypted + anchorfixstr;
+                
+                contentFrame.srcdoc = decrypted;
+                
+                successEl.style.display = "inline";
+                setTimeout(function() {
+                    dialogWrap.style.display = "none";
+                }, 1000);
+            } catch (e) {
+                invalidPassEl.style.display = "inline";
+                passEl.value = "";
+                submitPass.disabled = false;
+                passEl.disabled = false;
+                console.error(e);
+                return;
+            }
+        }
+        
+        submitPass.onclick = doSubmit;
+        passEl.onkeypress = function(e){
+            if (!e) e = window.event;
+            var keyCode = e.keyCode || e.which;
+            invalidPassEl.style.display = "none";
+            if (keyCode == '13'){
+              // Enter pressed
+              doSubmit();
+              return false;
+            }
+        }
+    })();
+    </script>
+  </body>
 </html>
