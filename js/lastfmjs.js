@@ -73,7 +73,7 @@ fetch("https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=prezl
                     //projectsinner.appendChild(listening.cloneNode(true));
                     //insertBefore
 
-                    document.getElementById("music").appendChild(listening);
+                    document.getElementByClassName("music").appendChild(listening);
 
 
                 });
